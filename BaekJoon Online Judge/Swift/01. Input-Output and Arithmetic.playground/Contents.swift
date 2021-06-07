@@ -20,3 +20,6 @@ print("|q p|   /}")
 print("( 0 )\"\"\"\\")
 print("|\"^\"`    |")
 print("||_/=\\\\__|")
+
+// 1000
+print((readLine()?.split(separator: " ").map { Int($0)! }.reduce(0, +))!)
