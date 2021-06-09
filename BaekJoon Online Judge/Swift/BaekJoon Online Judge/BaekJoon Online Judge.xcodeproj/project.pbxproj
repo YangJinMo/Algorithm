@@ -13,6 +13,7 @@
 		09655F5A266DF5E900A9CA76 /* 10718.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F59266DF5E900A9CA76 /* 10718.swift */; };
 		09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F5D266DF61B00A9CA76 /* 10171.swift */; };
 		09655F61266DF62700A9CA76 /* 10172.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F60266DF62700A9CA76 /* 10172.swift */; };
+		09F8BA84267108EC00280B6C /* 1001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA83267108EC00280B6C /* 1001.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		09655F59266DF5E900A9CA76 /* 10718.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10718.swift; sourceTree = "<group>"; };
 		09655F5D266DF61B00A9CA76 /* 10171.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10171.swift; sourceTree = "<group>"; };
 		09655F60266DF62700A9CA76 /* 10172.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10172.swift; sourceTree = "<group>"; };
+		09F8BA83267108EC00280B6C /* 1001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				09655F5D266DF61B00A9CA76 /* 10171.swift */,
 				09655F60266DF62700A9CA76 /* 10172.swift */,
 				09655F52266DE1D500A9CA76 /* 1000.swift */,
+				09F8BA83267108EC00280B6C /* 1001.swift */,
 			);
 			path = "01. Input-Output and Arithmetic";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				09655F53266DE1D500A9CA76 /* 1000.swift in Sources */,
 				09655F61266DF62700A9CA76 /* 10172.swift in Sources */,
+				09F8BA84267108EC00280B6C /* 1001.swift in Sources */,
 				09655F57266DF5B600A9CA76 /* 2557.swift in Sources */,
 				09655F45266DCF2D00A9CA76 /* main.swift in Sources */,
 				09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */,
