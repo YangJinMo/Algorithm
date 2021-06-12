@@ -22,3 +22,9 @@ class Problem_1000 {
     print((readLine()?.split(separator: " ").map { Int($0)! }.reduce(0, +))!)
   }
 }
+
+// readline: https://developer.apple.com/documentation/swift/1641199-readline
+// components: https://developer.apple.com/documentation/foundation/nsstring/1413214-components
+// map: https://developer.apple.com/documentation/swift/array/3017522-map
+// reduce: https://developer.apple.com/documentation/swift/array/2298686-reduce
+// split: https://developer.apple.com/documentation/swift/string/2894564-split
