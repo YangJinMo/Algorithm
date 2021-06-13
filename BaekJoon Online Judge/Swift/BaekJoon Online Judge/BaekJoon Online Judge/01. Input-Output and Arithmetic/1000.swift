@@ -7,6 +7,8 @@
 
 import Foundation
 
+// A+B - https://www.acmicpc.net/problem/1000
+
 class Problem_1000 {
   func solution_1() {
     let line = readLine()!

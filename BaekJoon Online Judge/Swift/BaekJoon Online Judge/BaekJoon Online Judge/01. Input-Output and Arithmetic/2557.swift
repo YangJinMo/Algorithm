@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Hello World - https://www.acmicpc.net/problem/2557
+
 class Problem_2557 {
   func solution_1() {
     print("Hello World!")

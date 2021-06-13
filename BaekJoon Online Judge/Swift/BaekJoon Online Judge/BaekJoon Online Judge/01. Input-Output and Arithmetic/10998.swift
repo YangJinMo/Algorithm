@@ -7,6 +7,8 @@
 
 import Foundation
 
+// A×B - https://www.acmicpc.net/problem/10998
+
 class Problem_10998 {
   func solution_1() {
     print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(1, *))!)

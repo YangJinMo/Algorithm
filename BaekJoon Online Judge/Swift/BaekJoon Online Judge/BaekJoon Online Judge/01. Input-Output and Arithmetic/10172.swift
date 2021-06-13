@@ -7,6 +7,8 @@
 
 import Foundation
 
+// 개 - https://www.acmicpc.net/problem/10172
+
 class Problem_10172 {
   func solution_1() {
     print("|\\_/|")

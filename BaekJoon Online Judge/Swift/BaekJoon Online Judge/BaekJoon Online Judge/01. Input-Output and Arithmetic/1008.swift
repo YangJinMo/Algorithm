@@ -7,6 +7,8 @@
 
 import Foundation
 
+// A/B - https://www.acmicpc.net/problem/1008
+
 class Problem_1008 {
   func solution_1() {
     print(1 / readLine()!.split(separator: " ").map{ Double($0)! }.reduce(1){ $1 / $0 })

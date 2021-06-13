@@ -7,6 +7,8 @@
 
 import Foundation
 
+// 고양이 - https://www.acmicpc.net/problem/10171
+
 class Problem_10171 {
   func solution_1() {
     print("\\    /\\")

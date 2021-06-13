@@ -7,6 +7,8 @@
 
 import Foundation
 
+// A-B - https://www.acmicpc.net/problem/1001
+
 class Problem_1001 {
   func solution_1() {
     print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(0, { x, y in -x - y }))!)
