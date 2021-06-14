@@ -22,7 +22,7 @@ class Problem_10869 {
     print(a%b)
   }
   func solution_2() {
-    // 백준 제출 컴파일 에러
+    // import Foundation
     let arr = readLine()!.components(separatedBy: " ").map{ Int($0)! }
     let a = arr[0]
     let b = arr[1]

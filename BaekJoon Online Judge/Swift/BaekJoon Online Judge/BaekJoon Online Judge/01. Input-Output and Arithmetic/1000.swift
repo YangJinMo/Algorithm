@@ -11,11 +11,13 @@ import Foundation
 
 class Problem_1000 {
   func solution_1() {
+    // import Foundation
     let line = readLine()!
     let lineArr = line.components(separatedBy: " ")
     print(Int(lineArr[0])! + Int(lineArr[1])!)
   }
   func solution_2() {
+    // import Foundation
     let line = readLine()!
     let intArr = line.components(separatedBy: " ").map{ Int($0)! }
     print(intArr.reduce(0, +))
@@ -24,6 +26,8 @@ class Problem_1000 {
     print((readLine()?.split(separator: " ").map { Int($0)! }.reduce(0, +))!)
   }
 }
+
+// import Foundation is required to use components.
 
 // readline: https://developer.apple.com/documentation/swift/1641199-readline
 // components: https://developer.apple.com/documentation/foundation/nsstring/1413214-components

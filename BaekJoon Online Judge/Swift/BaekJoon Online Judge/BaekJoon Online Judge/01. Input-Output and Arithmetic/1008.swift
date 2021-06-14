@@ -18,6 +18,7 @@ class Problem_1008 {
     print(arr[0] / arr[1])
   }
   func solution_3() {
+    // import Foundation
     let arr = readLine()!.components(separatedBy: " ").map{ Double($0)! }
     print(arr[0] / arr[1])
   }

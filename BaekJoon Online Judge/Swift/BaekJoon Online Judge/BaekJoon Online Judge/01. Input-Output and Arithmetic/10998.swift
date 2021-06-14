@@ -14,6 +14,6 @@ class Problem_10998 {
     print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(1, *))!)
   }
   func solution_2() {
-    print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(1){$0 * $1})!)
+    print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(1){ $0 * $1 })!)
   }
 }
