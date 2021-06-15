@@ -13,6 +13,7 @@
 		09655F5A266DF5E900A9CA76 /* 10718.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F59266DF5E900A9CA76 /* 10718.swift */; };
 		09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F5D266DF61B00A9CA76 /* 10171.swift */; };
 		09655F61266DF62700A9CA76 /* 10172.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F60266DF62700A9CA76 /* 10172.swift */; };
+		0970C66B2678DF7800022187 /* 10430.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970C66A2678DF7800022187 /* 10430.swift */; };
 		0986ADB926762762001A6EE2 /* 10869.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986ADB826762762001A6EE2 /* 10869.swift */; };
 		0999481826734168005CEB35 /* 1008.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0999481726734168005CEB35 /* 1008.swift */; };
 		09F8BA84267108EC00280B6C /* 1001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA83267108EC00280B6C /* 1001.swift */; };
@@ -39,6 +40,7 @@
 		09655F59266DF5E900A9CA76 /* 10718.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10718.swift; sourceTree = "<group>"; };
 		09655F5D266DF61B00A9CA76 /* 10171.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10171.swift; sourceTree = "<group>"; };
 		09655F60266DF62700A9CA76 /* 10172.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10172.swift; sourceTree = "<group>"; };
+		0970C66A2678DF7800022187 /* 10430.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10430.swift; sourceTree = "<group>"; };
 		0986ADB826762762001A6EE2 /* 10869.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10869.swift; sourceTree = "<group>"; };
 		0999481726734168005CEB35 /* 1008.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1008.swift; sourceTree = "<group>"; };
 		09F8BA83267108EC00280B6C /* 1001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				09F8BA862672598500280B6C /* 10998.swift */,
 				0999481726734168005CEB35 /* 1008.swift */,
 				0986ADB826762762001A6EE2 /* 10869.swift */,
+				0970C66A2678DF7800022187 /* 10430.swift */,
 			);
 			path = "01. Input-Output and Arithmetic";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				0986ADB926762762001A6EE2 /* 10869.swift in Sources */,
 				09655F61266DF62700A9CA76 /* 10172.swift in Sources */,
 				09F8BA84267108EC00280B6C /* 1001.swift in Sources */,
+				0970C66B2678DF7800022187 /* 10430.swift in Sources */,
 				09655F57266DF5B600A9CA76 /* 2557.swift in Sources */,
 				09655F45266DCF2D00A9CA76 /* main.swift in Sources */,
 				09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */,

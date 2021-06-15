@@ -7,5 +7,5 @@
 
 import Foundation
 
-let problem = Problem_10869()
-problem.solution_3()
+let problem = Problem_10430()
+problem.solution_1()
