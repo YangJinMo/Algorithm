@@ -11,10 +11,10 @@ import Foundation
 
 class Problem_10430 {
   func solution_1() {
-    let arr = readLine()!.split(separator: " ").map{ Int($0)! }
-    let a = arr[0]
-    let b = arr[1]
-    let c = arr[2]
+    let arr: [Int] = readLine()!.split(separator: " ").map{ Int($0)! }
+    let a: Int = arr[0]
+    let b: Int = arr[1]
+    let c: Int = arr[2]
     print((a+b)%c)
     print(((a%c)+(b%c))%c)
     print((a*b)%c)

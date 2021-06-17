@@ -12,14 +12,14 @@ import Foundation
 class Problem_1000 {
   func solution_1() {
     // import Foundation
-    let line = readLine()!
-    let lineArr = line.components(separatedBy: " ")
+    let line: String = readLine()!
+    let lineArr: [String] = line.components(separatedBy: " ")
     print(Int(lineArr[0])! + Int(lineArr[1])!)
   }
   func solution_2() {
     // import Foundation
-    let line = readLine()!
-    let intArr = line.components(separatedBy: " ").map{ Int($0)! }
+    let line: String = readLine()!
+    let intArr: [Int] = line.components(separatedBy: " ").map{ Int($0)! }
     print(intArr.reduce(0, +))
   }
   func solution_3() {

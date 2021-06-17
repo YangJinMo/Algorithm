@@ -14,12 +14,12 @@ class Problem_1008 {
     print(1 / readLine()!.split(separator: " ").map{ Double($0)! }.reduce(1){ $1 / $0 })
   }
   func solution_2() {
-    let arr = readLine()!.split(separator: " ").map{ Double($0)! }
+    let arr: [Double] = readLine()!.split(separator: " ").map{ Double($0)! }
     print(arr[0] / arr[1])
   }
   func solution_3() {
     // import Foundation
-    let arr = readLine()!.components(separatedBy: " ").map{ Double($0)! }
+    let arr: [Double] = readLine()!.components(separatedBy: " ").map{ Double($0)! }
     print(arr[0] / arr[1])
   }
 }

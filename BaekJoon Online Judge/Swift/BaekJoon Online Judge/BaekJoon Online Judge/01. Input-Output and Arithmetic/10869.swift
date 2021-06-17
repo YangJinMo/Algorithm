@@ -11,10 +11,10 @@ import Foundation
 
 class Problem_10869 {
   func solution_1() {
-    let line = readLine() ?? ""
-    let lineArr = line.split(separator: " ")
-    let a = Int(lineArr[0]) ?? 0
-    let b = Int(lineArr[1]) ?? 0
+    let line: String = readLine() ?? ""
+    let lineArr: [String.SubSequence] = line.split(separator: " ")
+    let a: Int = Int(lineArr[0]) ?? 0
+    let b: Int = Int(lineArr[1]) ?? 0
     print(a+b)
     print(a-b)
     print(a*b)
@@ -23,9 +23,9 @@ class Problem_10869 {
   }
   func solution_2() {
     // import Foundation
-    let arr = readLine()!.components(separatedBy: " ").map{ Int($0)! }
-    let a = arr[0]
-    let b = arr[1]
+    let arr: [Int] = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+    let a: Int = arr[0]
+    let b: Int = arr[1]
     print(a+b)
     print(a-b)
     print(a*b)
@@ -33,9 +33,9 @@ class Problem_10869 {
     print(a%b)
   }
   func solution_3() {
-    let arr = readLine()!.split(separator: " ").map{ Int($0)! }
-    let a = arr[0]
-    let b = arr[1]
+    let arr: [Int] = readLine()!.split(separator: " ").map{ Int($0)! }
+    let a: Int = arr[0]
+    let b: Int = arr[1]
     print(a+b)
     print(a-b)
     print(a*b)
