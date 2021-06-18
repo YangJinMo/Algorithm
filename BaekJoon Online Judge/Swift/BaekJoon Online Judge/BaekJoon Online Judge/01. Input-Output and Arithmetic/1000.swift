@@ -33,6 +33,9 @@ class Problem_1000 {
   func solution_3() {
     print((readLine()?.split(separator: " ").map { Int($0)! }.reduce(0, +))!)
   }
+  func solution_4() {
+    print((readLine()!.split(separator: " ").map { Int($0)! }.reduce(0, +)))
+  }
 }
 
 // import Foundation is required to use components.
