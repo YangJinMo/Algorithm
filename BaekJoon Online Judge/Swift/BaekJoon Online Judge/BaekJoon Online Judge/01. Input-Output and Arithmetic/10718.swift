@@ -5,8 +5,6 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-import Foundation
-
 // We love kriii - https://www.acmicpc.net/problem/10718
 
 class Problem_10718 {

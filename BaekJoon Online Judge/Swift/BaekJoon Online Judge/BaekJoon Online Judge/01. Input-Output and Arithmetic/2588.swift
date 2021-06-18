@@ -5,8 +5,6 @@
 //  Created by Jmy on 2021/06/16.
 //
 
-import Foundation
-
 // 곱샘 - https://www.acmicpc.net/problem/10430
 
 class Problem_2588 {

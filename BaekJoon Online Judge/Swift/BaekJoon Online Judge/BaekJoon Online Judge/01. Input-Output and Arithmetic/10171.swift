@@ -5,8 +5,6 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-import Foundation
-
 // 고양이 - https://www.acmicpc.net/problem/10171
 
 class Problem_10171 {

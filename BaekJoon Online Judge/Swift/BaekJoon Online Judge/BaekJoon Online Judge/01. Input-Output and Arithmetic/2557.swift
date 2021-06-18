@@ -5,8 +5,6 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-import Foundation
-
 // Hello World - https://www.acmicpc.net/problem/2557
 
 class Problem_2557 {

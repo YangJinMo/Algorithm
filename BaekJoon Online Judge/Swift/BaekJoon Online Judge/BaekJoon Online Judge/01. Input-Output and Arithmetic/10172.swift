@@ -5,8 +5,6 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-import Foundation
-
 // 개 - https://www.acmicpc.net/problem/10172
 
 class Problem_10172 {
