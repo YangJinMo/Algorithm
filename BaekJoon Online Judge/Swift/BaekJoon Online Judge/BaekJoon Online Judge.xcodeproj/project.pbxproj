@@ -21,6 +21,7 @@
 		0999481826734168005CEB35 /* 1008.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0999481726734168005CEB35 /* 1008.swift */; };
 		099CA8ED267CC4A5006DE887 /* 1330.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099CA8EC267CC4A5006DE887 /* 1330.swift */; };
 		09C5524E2681580200A4E88D /* 14681.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5524D2681580200A4E88D /* 14681.swift */; };
+		09C839552682FB980044ED78 /* 2884.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C839542682FB980044ED78 /* 2884.swift */; };
 		09F8BA84267108EC00280B6C /* 1001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA83267108EC00280B6C /* 1001.swift */; };
 		09F8BA872672598500280B6C /* 10998.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA862672598500280B6C /* 10998.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		0999481726734168005CEB35 /* 1008.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1008.swift; sourceTree = "<group>"; };
 		099CA8EC267CC4A5006DE887 /* 1330.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1330.swift; sourceTree = "<group>"; };
 		09C5524D2681580200A4E88D /* 14681.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14681.swift; sourceTree = "<group>"; };
+		09C839542682FB980044ED78 /* 2884.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2884.swift; sourceTree = "<group>"; };
 		09F8BA83267108EC00280B6C /* 1001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
 		09F8BA862672598500280B6C /* 10998.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10998.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				098DB53F267F219900F5F071 /* 9498.swift */,
 				0988D73B2680B7F500FA59EA /* 2753.swift */,
 				09C5524D2681580200A4E88D /* 14681.swift */,
+				09C839542682FB980044ED78 /* 2884.swift */,
 			);
 			path = "02. If Statement";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09655F53266DE1D500A9CA76 /* 1000.swift in Sources */,
+				09C839552682FB980044ED78 /* 2884.swift in Sources */,
 				09F8BA872672598500280B6C /* 10998.swift in Sources */,
 				099CA8ED267CC4A5006DE887 /* 1330.swift in Sources */,
 				098DB540267F219900F5F071 /* 9498.swift in Sources */,

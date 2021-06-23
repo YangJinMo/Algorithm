@@ -17,7 +17,7 @@ class Problem_1008 {
      let arr: [Double] = readLine()!.components(separatedBy: " ").map{ Double($0)! }
      print(arr[0] / arr[1])
      */
-    let arr: [Double] = readLine()!.split(separator: " ").map{ Double($0)! }
-    print(arr[0] / arr[1])
+    let lineArr: [Double] = readLine()!.split(separator: " ").map{ Double($0)! }
+    print(lineArr[0] / lineArr[1])
   }
 }

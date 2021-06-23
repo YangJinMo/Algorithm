@@ -9,9 +9,9 @@
 
 class Problem_1330 {
   func solution_1() {
-    let arr: [Int] = readLine()!.split(separator: " ").map{ Int($0)! }
-    let a: Int = arr[0]
-    let b: Int = arr[1]
+    let lineArr: [Int] = readLine()!.split(separator: " ").map{ Int($0)! }
+    let a: Int = lineArr[0]
+    let b: Int = lineArr[1]
     if a > b {
       print(">")
     } else if a < b {

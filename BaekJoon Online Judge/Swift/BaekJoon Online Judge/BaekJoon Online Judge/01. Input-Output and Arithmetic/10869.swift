@@ -13,20 +13,20 @@ class Problem_10869 {
     let lineArr: [String.SubSequence] = line.split(separator: " ")
     let a: Int = Int(lineArr[0]) ?? 0
     let b: Int = Int(lineArr[1]) ?? 0
-    print(a+b)
-    print(a-b)
-    print(a*b)
-    print(a/b)
-    print(a%b)
+    print(a + b)
+    print(a - b)
+    print(a * b)
+    print(a / b)
+    print(a % b)
   }
   func solution_2() {
-    let arr: [Int] = readLine()!.split(separator: " ").map{ Int($0)! }
-    let a: Int = arr[0]
-    let b: Int = arr[1]
-    print(a+b)
-    print(a-b)
-    print(a*b)
-    print(a/b)
-    print(a%b)
+    let lineArr: [Int] = readLine()!.split(separator: " ").map{ Int($0)! }
+    let a: Int = lineArr[0]
+    let b: Int = lineArr[1]
+    print(a + b)
+    print(a - b)
+    print(a * b)
+    print(a / b)
+    print(a % b)
   }
 }
