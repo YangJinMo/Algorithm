@@ -5,7 +5,13 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-// A+B - https://www.acmicpc.net/problem/1000
+/**
+ - 제목: A+B
+ - 문제: 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+ - 입력: 첫째 줄에 A와 B가 주어진다. (0 `<` A, B `<` 10)
+ - 출력: 첫째 줄에 A+B를 출력한다.
+ - 원문: https://www.acmicpc.net/problem/1000
+ */
 
 class Problem_1000 {
   func solution_1() {
@@ -35,6 +41,11 @@ class Problem_1000 {
   }
   func solution_4() {
     print((readLine()!.split(separator: " ").map { Int($0)! }.reduce(0, +)))
+  }
+  /// https://www.acmicpc.net/short/status/1000/74/1
+  /// 3등
+  func solution_zzimss() {
+    print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))
   }
 }
 

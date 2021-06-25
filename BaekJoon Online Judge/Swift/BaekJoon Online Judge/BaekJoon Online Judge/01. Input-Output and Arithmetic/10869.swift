@@ -5,7 +5,13 @@
 //  Created by Jmy on 2021/06/13.
 //
 
-// 사칙연산 - https://www.acmicpc.net/problem/10869
+/**
+ - 제목: 사칙연산
+ - 문제: 두 자연수 A와 B가 주어진다. 이때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오.
+ - 입력: 두 자연수 A와 B가 주어진다. (1 ≤ A, B ≤ 10,000)
+ - 출력: 첫째 줄에 A+B, 둘째 줄에 A-B, 셋째 줄에 A*B, 넷째 줄에 A/B, 다섯째 줄에 A%B를 출력한다.
+ - 원문: https://www.acmicpc.net/problem/10869
+ */
 
 class Problem_10869 {
   func solution_1() {
@@ -28,5 +34,10 @@ class Problem_10869 {
     print(a * b)
     print(a / b)
     print(a % b)
+  }
+  /// https://www.acmicpc.net/short/status/10869/74/1
+  /// 1등
+  func solution_zzimss() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!};let a=l[0],b=l[1];print(a+b,a-b,a*b,a/b,a%b,separator:"\n")
   }
 }
