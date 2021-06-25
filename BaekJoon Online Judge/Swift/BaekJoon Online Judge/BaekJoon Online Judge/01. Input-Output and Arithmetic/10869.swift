@@ -38,6 +38,6 @@ class Problem_10869 {
   /// https://www.acmicpc.net/short/status/10869/74/1
   /// 1등
   func solution_zzimss() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!};let a=l[0],b=l[1];print(a+b,a-b,a*b,a/b,a%b,separator:"\n")
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1];print(a+b,a-b,a*b,a/b,a%b,separator:"\n")
   }
 }
