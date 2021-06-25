@@ -36,10 +36,13 @@ class Problem_1330 {
   func solution_3() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};let(a,b)=(l[0],l[1]);print(a>b ?">":a<b ?"<":"==")
   }
+  func solution_4() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1];print(a>b ?">":a<b ?"<":"==")
+  }
   /// https://www.acmicpc.net/short/status/1330/74/1
   /// 2등
   func solution_zzimss() {
-    let a=readLine()!.split{$0 == " "}.map{Int($0)!},b=a[0]-a[1];print(b>0 ? ">":(b<0 ? "<":"=="))
+    let a=readLine()!.split{$0==" "}.map{Int($0)!},b=a[0]-a[1];print(b>0 ?">":b<0 ?"<":"==")
   }
   func solution_wapas() {
     let i=readLine()!.split{$0==" "}.map{Int($0)!};print(i[0]>i[1] ?">":i[0]<i[1] ?"<":"==")
