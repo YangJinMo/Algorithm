@@ -43,6 +43,9 @@ class Problem_2884 {
   func solution_2() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};var(h,m)=(l[0],l[1]-45);if m<0{h-=1;m+=60;if h<0{h+=24}};print(h, m)
   }
+  func solution_3() {
+    var l=readLine()!.split{$0==" "}.map{Int($0)!},h=l[0],m=l[1]-45;if m<0{h-=1;m+=60;if h<0{h+=24}};print(h, m)
+  }
   /// https://www.acmicpc.net/short/status/2884/74/1
   /// 1등
   func solution_zzimss() {
