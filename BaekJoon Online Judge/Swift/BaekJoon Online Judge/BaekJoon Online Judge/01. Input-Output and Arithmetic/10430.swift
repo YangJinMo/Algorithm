@@ -32,7 +32,7 @@ class Problem_10430 {
   /// https://www.acmicpc.net/short/status/10430/74/1
   /// 1등
   func solution_zzimss() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!};let a=l[0],b=l[1],c=l[2];print((a+b)%c,((a%c)+(b%c))%c,(a*b)%c,((a%c)*(b%c))%c,separator:"\n")
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1],c=l[2];print((a+b)%c,((a%c)+(b%c))%c,(a*b)%c,((a%c)*(b%c))%c,separator:"\n")
   }
   func solution_wapas() {
     let i=readLine()!.split{$0==" "}.map{Int($0)!};let a=i[0],b=i[1],c=i[2];print("\((a+b)%c)\n\(((a%c)+(b%c))%c)\n\((a*b)%c)\n\(((a%c)*(b%c))%c)")
