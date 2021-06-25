@@ -44,9 +44,9 @@ class Problem_2884 {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};var(h,m)=(l[0],l[1]-45);if m<0{h-=1;m+=60;if h<0{h+=24}};print(h, m)
   }
   /// https://www.acmicpc.net/short/status/2884/74/1
-  /// 2등
+  /// 1등
   func solution_zzimss() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!};var a=l[0]*60+l[1]-45;a=a<0 ?a+1440:a;print(a/60,a%60)
+    var l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0]*60+l[1]-45;a=a<0 ?a+1440:a;print(a/60,a%60)
   }
   func solution_wapas() {
     let i=readLine()!.split{$0==" "}.map{Int($0)!};var a=i[0]*60+i[1]-45;a=a<0 ?a+1440:a;print("\(a/60) \(a%60)")
