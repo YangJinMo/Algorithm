@@ -19,7 +19,7 @@ class Problem_2753 {
   func solution_1() {
     let year: Int = Int(readLine()!)!
     if year >= 1 && year <= 4000 {
-      if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
+      if year % 4 == 0 && year % 100 != 0 || year % 400 == 0 {
         print(1)
       } else {
         print(0)
@@ -32,7 +32,7 @@ class Problem_2753 {
     if let line: String = readLine() {
       if let year: Int = Int(line) {
         if year >= 1 && year <= 4000 {
-          if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
+          if year % 4 == 0 && year % 100 != 0 || year % 400 == 0 {
             print(1)
           } else {
             print(0)
