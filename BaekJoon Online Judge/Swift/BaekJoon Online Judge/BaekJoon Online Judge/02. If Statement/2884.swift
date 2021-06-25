@@ -46,7 +46,7 @@ class Problem_2884 {
   /// https://www.acmicpc.net/short/status/2884/74/1
   /// 1등
   func solution_zzimss() {
-    var l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0]*60+l[1]-45;a=a<0 ?a+1440:a;print(a/60,a%60)
+    var l=readLine()!.split{$0==" "}.map{Int($0)!},h=l[0]+23,m=l[1]+15;h+=m/60;print(h%24,m%60)
   }
   func solution_wapas() {
     let i=readLine()!.split{$0==" "}.map{Int($0)!};var a=i[0]*60+i[1]-45;a=a<0 ?a+1440:a;print("\(a/60) \(a%60)")
