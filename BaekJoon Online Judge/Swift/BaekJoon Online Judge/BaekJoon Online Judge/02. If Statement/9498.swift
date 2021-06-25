@@ -50,14 +50,13 @@ class Problem_9498 {
     // let n=Int(readLine()!)!;var c:Character="A";if(n<60){c="F";}else if(n<70){c="D";}else if(n<80){c="C";}else if(n<90){c="B";};print(c)
   }
   func solution_4() {
-    let n=Int(readLine()!)!;
-    var c=65;
+    var n=Int(readLine()!)!,c=65;
     if(n<90){c+=1;}
     if(n<80){c+=1;}
     if(n<70){c+=1;}
     if(n<60){c+=2;};
     print(UnicodeScalar(c)!)
-    // let n=Int(readLine()!)!;var c=65;if(n<90){c+=1;};if(n<80){c+=1;};if(n<70){c+=1;};if(n<60){c+=2;};print(UnicodeScalar(c)!)
+    // var n=Int(readLine()!)!,c=65;if(n<90){c+=1;};if(n<80){c+=1;};if(n<70){c+=1;};if(n<60){c+=2;};print(UnicodeScalar(c)!)
   }
   /// https://www.acmicpc.net/short/status/9498/74/1
   /// 2등
