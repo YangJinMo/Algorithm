@@ -5,5 +5,5 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-let problem = Problem_8393()
+let problem = Problem_2741()
 problem.solution_1()
