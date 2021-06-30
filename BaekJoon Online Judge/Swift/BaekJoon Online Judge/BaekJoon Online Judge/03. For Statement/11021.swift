@@ -33,12 +33,12 @@ class Problem_11021 {
       print("Case #\($0):",readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))
     }
   }
+  func solution_4() {
+    for i in 1...Int(readLine()!)!{print("Case #\(i):",readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))}
+  }
   /// https://www.acmicpc.net/short/status/11021/74/1
   /// 1등
   func solution_zzimss() {
     (1...Int(readLine()!)!).map{print("Case #\($0):",readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))}
-  }
-  func solution_zzimss_2() {
-    for i in 1...Int(readLine()!)!{print("Case #\(i):",readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))}
   }
 }
