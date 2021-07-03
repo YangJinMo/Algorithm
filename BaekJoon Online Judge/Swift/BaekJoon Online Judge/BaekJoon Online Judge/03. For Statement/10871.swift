@@ -22,9 +22,6 @@ class Problem_10871 {
     a.filter { $0 < x }.map{ print($0, terminator: " ") }
   }
   func solution_2() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=readLine()!.split{$0==" "}.map{Int($0)!};a.filter{$0<l[1]}.map{print($0,terminator:" ")}
-  }
-  func solution_3() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};readLine()!.split{$0==" "}.map{Int($0)!}.filter{$0<l[1]}.map{print($0,terminator:" ")}
   }
   /// https://www.acmicpc.net/short/status/10871/74/1
