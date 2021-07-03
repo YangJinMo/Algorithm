@@ -32,10 +32,17 @@ class Problem_10171 {
      )  ( ')
     (  /  )
      \(__)|
-    """#)
+    """#) // 69
+  }
+  func solution_5() {
+    print(["\\    /\\"," )  ( ')","(  /  )"," \\(__)|"].reduce(""){ $0 + "\n" + $1 }) // -> solution_6
+  }
+  func solution_6() {
+    ["\\    /\\"," )  ( ')","(  /  )"," \\(__)|"].map{print($0)}
   }
   /// https://www.acmicpc.net/short/status/10171/74/1
+  /// 32등
   func solution_zzimss() {
-    print("\\    /\\\n )  ( ')\n(  /  )\n \\(__)|")
+    print("\\    /\\\n )  ( ')\n(  /  )\n \\(__)|") // 47
   }
 }
