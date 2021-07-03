@@ -66,15 +66,18 @@ class Problem_2739 {
       } while i <= 9
     }
   }
+  func solution_6() {
+    let l=Int(readLine()!)!;for i in 1...9{print(l,"*",i,"=",l*i)}
+  }
   /// https://www.acmicpc.net/short/status/2739/74/1
   /// 1등
   func solution_zzimss() {
-    let a=Int(readLine()!)!;(1...9).map{print(a,"*",$0,"=",a*$0)}
+    let l=Int(readLine()!)!;(1...9).map{print(l,"*",$0,"=",l*$0)}
   }
   func solution_yeram0510() {
-    let i=Int(readLine()!)!;(1...9).map{print("\(i) * \($0) = \(i*$0)")}
+    let l=Int(readLine()!)!;(1...9).map{print("\(l) * \($0) = \(l*$0)")}
   }
   func solution_wapas() {
-    let x=Int(readLine()!)!;for i in 1...9{print("\(x) * \(i) = \(x*i)")}
+    let l=Int(readLine()!)!;for i in 1...9{print("\(l) * \(i) = \(l*i)")}
   }
 }
