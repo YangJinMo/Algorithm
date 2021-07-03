@@ -15,17 +15,17 @@
 
 class Problem_10998 {
   func solution_1() {
-    print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(1, *))!)
+    print(readLine()!.split(separator: " ").map{ Int($0)! }.reduce(1, *))
   }
   func solution_2() {
-    print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(1){ $0 * $1 })!)
+    print(readLine()!.split(separator: " ").map{ Int($0)! }.reduce(1){ $0 * $1 })
+  }
+  func solution_3() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]*l[1])
   }
   /// https://www.acmicpc.net/short/status/10998/74/1
   /// 2등
   func solution_zzimss() {
-    print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(1,*))
-  }
-  func solution_wapas() {
     print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(1,*))
   }
 }
