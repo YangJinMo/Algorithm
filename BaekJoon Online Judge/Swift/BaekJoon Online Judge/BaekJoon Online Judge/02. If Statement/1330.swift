@@ -39,10 +39,13 @@ class Problem_1330 {
   func solution_4() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1];print(a>b ?">":a<b ?"<":"==")
   }
-  /// https://www.acmicpc.net/short/status/1330/74/1
-  /// 2등 - 같은 코드 길이
-  func solution_zzimss() {
+  func solution_5() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!},b=l[0]-l[1];print(b>0 ?">":b<0 ?"<":"==")
+  }
+  /// https://www.acmicpc.net/short/status/1330/74/1
+  /// 1등
+  func solution_zzimss() {
+    let l=readLine()!.split{$0==" "},b=Int(l[0])!-Int(l[1])!;print(b>0 ?">":b<0 ?"<":"==")
   }
   func solution_wapas() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]>l[1] ?">":l[0]<l[1] ?"<":"==")
