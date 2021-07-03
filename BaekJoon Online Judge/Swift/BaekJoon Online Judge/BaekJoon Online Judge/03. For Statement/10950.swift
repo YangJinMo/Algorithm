@@ -39,6 +39,9 @@ class Problem_10950 {
       print(readLine()!.split(separator: " ").map { Int($0)! }.reduce(0, +))
     }
   }
+  func solution_4() {
+    for _ in 1...Int(readLine()!)!{let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])}
+  }
   /// https://www.acmicpc.net/short/status/10950/74/1
   /// 2등
   func solution_zzimss() {
