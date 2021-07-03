@@ -24,9 +24,12 @@ class Problem_10871 {
   func solution_2() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};readLine()!.split{$0==" "}.map{Int($0)!}.filter{$0<l[1]}.map{print($0,terminator:" ")}
   }
+  func solution_3() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!}[1];readLine()!.split{$0==" "}.map{Int($0)!}.filter{$0<l}.map{print($0,terminator:" ")}
+  }
   /// https://www.acmicpc.net/short/status/10871/74/1
   /// 1등
   func solution_zzimss() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!}[1];readLine()!.split{$0==" "}.map{Int($0)!}.filter{$0<l}.map{print($0,terminator:" ")}
+    let l=readLine()!.split{$0==" "};readLine()!.split{$0==" "}.map{Int($0)!}.filter{$0<Int(l[1])!}.map{print($0,terminator:" ")}
   }
 }
