@@ -32,6 +32,6 @@ class Problem_2439 {
   /// https://www.acmicpc.net/short/status/2439/74/1
   /// 1등
   func solution_zzimss() {
-    var l=Int(readLine()!)!,s="";(1...l).map{i in(1...l).map{s+=l-$0-i<0 ?"*":" "};print(s);s=""}
+    var l=Int(readLine()!)!,s="";(1...l).map{for j in 1...l{s+=l-j-$0<0 ?"*":" "};print(s);s=""}
   }
 }
