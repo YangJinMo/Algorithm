@@ -58,12 +58,12 @@ class Problem_9498 {
     print(UnicodeScalar(c)!)
     // var n=Int(readLine()!)!,c=65;if(n<90){c+=1;};if(n<80){c+=1;};if(n<70){c+=1;};if(n<60){c+=2;};print(UnicodeScalar(c)!)
   }
+  func solution_5() {
+    let l=Int(readLine()!)!;print(UnicodeScalar(l>89 ?65:l>79 ?66:l>69 ?67:l>59 ?68:70)!)
+  }
   /// https://www.acmicpc.net/short/status/9498/74/1
   /// 2등
   func solution_zzimss() {
-    let l=Int(readLine()!)!;print(UnicodeScalar(l>89 ?65:l>79 ?66:l>69 ?67:l>59 ?68:70)!)
-  }
-  func solution_wapas() {
     let l=Int(readLine()!)!;print(l>89 ?"A":l>79 ?"B":l>69 ?"C":l>59 ?"D":"F")
   }
 }
