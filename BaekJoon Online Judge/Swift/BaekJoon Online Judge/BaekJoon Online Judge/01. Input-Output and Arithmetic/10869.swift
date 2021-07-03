@@ -15,7 +15,7 @@
 
 class Problem_10869 {
   func solution_1() {
-    let line: String = readLine() ?? ""
+    let line: String = readLine()!
     let lineArr: [String.SubSequence] = line.split(separator: " ")
     let a: Int = Int(lineArr[0]) ?? 0
     let b: Int = Int(lineArr[1]) ?? 0
