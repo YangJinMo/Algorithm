@@ -30,6 +30,9 @@ class Problem_1008 {
   func solution_3() {
     print(1/readLine()!.split{$0==" "}.map{Double($0)!}.reduce(1){$1/$0})
   }
+  func solution_4() {
+    let l=readLine()!.split{$0==" "};print(Double(l[0])!/Double(l[1])!)
+  }
   /// https://www.acmicpc.net/short/status/1008/74/1
   /// 1등
   func solution_zzimss() {
