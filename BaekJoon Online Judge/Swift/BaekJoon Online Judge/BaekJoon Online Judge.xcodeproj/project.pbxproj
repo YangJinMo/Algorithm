@@ -11,6 +11,7 @@
 		0941BEA92683FA8E00942362 /* 2739.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BEA82683FA8E00942362 /* 2739.swift */; };
 		0945B17B268D966F007CBF70 /* 2438.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B17A268D966F007CBF70 /* 2438.swift */; };
 		0945B181268E256C007CBF70 /* 2439.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B180268E256C007CBF70 /* 2439.swift */; };
+		0945B184269029D1007CBF70 /* 10871.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B183269029D1007CBF70 /* 10871.swift */; };
 		09655F45266DCF2D00A9CA76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F44266DCF2D00A9CA76 /* main.swift */; };
 		09655F53266DE1D500A9CA76 /* 1000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F52266DE1D500A9CA76 /* 1000.swift */; };
 		09655F57266DF5B600A9CA76 /* 2557.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655F56266DF5B600A9CA76 /* 2557.swift */; };
@@ -52,6 +53,7 @@
 		0941BEA82683FA8E00942362 /* 2739.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2739.swift; sourceTree = "<group>"; };
 		0945B17A268D966F007CBF70 /* 2438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2438.swift; sourceTree = "<group>"; };
 		0945B180268E256C007CBF70 /* 2439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2439.swift; sourceTree = "<group>"; };
+		0945B183269029D1007CBF70 /* 10871.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10871.swift; sourceTree = "<group>"; };
 		09655F41266DCF2D00A9CA76 /* BaekJoon Online Judge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BaekJoon Online Judge"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09655F44266DCF2D00A9CA76 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		09655F52266DE1D500A9CA76 /* 1000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1000.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				096A1F7A268C0FB200BD29D6 /* 11022.swift */,
 				0945B17A268D966F007CBF70 /* 2438.swift */,
 				0945B180268E256C007CBF70 /* 2439.swift */,
+				0945B183269029D1007CBF70 /* 10871.swift */,
 			);
 			path = "03. For Statement";
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				09CF2C7926857FDB007A4997 /* 10950.swift in Sources */,
 				09C5524E2681580200A4E88D /* 14681.swift in Sources */,
 				09655F57266DF5B600A9CA76 /* 2557.swift in Sources */,
+				0945B184269029D1007CBF70 /* 10871.swift in Sources */,
 				09655F45266DCF2D00A9CA76 /* main.swift in Sources */,
 				098C819526875FF6008E7E1D /* 8393.swift in Sources */,
 				09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */,
