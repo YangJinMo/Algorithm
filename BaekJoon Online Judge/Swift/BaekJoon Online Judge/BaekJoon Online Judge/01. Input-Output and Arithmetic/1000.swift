@@ -42,6 +42,9 @@ class Problem_1000 {
   func solution_4() {
     print((readLine()!.split(separator: " ").map { Int($0)! }.reduce(0, +)))
   }
+  func solution_5() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])
+  }
   /// https://www.acmicpc.net/short/status/1000/74/1
   /// 3등
   func solution_zzimss() {
