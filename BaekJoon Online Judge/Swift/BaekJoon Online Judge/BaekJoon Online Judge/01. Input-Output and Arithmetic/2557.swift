@@ -17,4 +17,6 @@ class Problem_2557 {
   func solution_1() {
     print("Hello World!")
   }
+  /// https://www.acmicpc.net/short/status/10172/74/1
+  /// 7등
 }
