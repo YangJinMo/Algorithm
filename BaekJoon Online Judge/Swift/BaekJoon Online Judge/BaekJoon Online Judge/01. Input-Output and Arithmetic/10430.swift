@@ -32,9 +32,12 @@ class Problem_10430 {
   func solution_3() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!},(a,b,c)=(l[0],l[1],l[2]);print((a+b)%c,((a%c)+(b%c))%c,(a*b)%c,((a%c)*(b%c))%c,separator:"\n")
   }
+  func solution_4() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1],c=l[2];print((a+b)%c,((a%c)+(b%c))%c,(a*b)%c,((a%c)*(b%c))%c,separator:"\n")
+  }
   /// https://www.acmicpc.net/short/status/10430/74/1
   /// 1등
   func solution_zzimss() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1],c=l[2];print((a+b)%c,((a%c)+(b%c))%c,(a*b)%c,((a%c)*(b%c))%c,separator:"\n")
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1],c=l[2];[(a+b)%c,((a%c)+(b%c))%c,(a*b)%c,((a%c)*(b%c))%c].map{print($0)}
   }
 }
