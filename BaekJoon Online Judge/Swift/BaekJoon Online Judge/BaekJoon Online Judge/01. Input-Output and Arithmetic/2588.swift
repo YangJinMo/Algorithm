@@ -41,9 +41,12 @@ class Problem_2588 {
   func solution_5() {
     let a=Int(readLine()!)!,b=Int(readLine()!)!;print(a*(b%10),a*(b/10%10),a*(b/100),a*b,terminator:"\n")
   }
+  func solution_6() {
+    let a=Int(readLine()!)!,b=Int(readLine()!)!;print(a*(b%10),a*(b/10%10),a*(b/100),a*b,separator:"\n")
+  }
   /// https://www.acmicpc.net/short/status/2588/74/1
   /// 1등
   func solution_zzimss() {
-    let a=Int(readLine()!)!,b=Int(readLine()!)!;print(a*(b%10),a*(b/10%10),a*(b/100),a*b,separator:"\n")
+    let a=Int(readLine()!)!,b=Int(readLine()!)!;[a*(b%10),a*(b/10%10),a*(b/100),a*b].map{print($0)}
   }
 }
