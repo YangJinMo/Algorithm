@@ -23,6 +23,9 @@ class Problem_10998 {
   func solution_3() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]*l[1])
   }
+  func solution_4() {
+    let l=readLine()!.split{$0==" "};print(Int(l[0])!*Int(l[1])!)
+  }
   /// https://www.acmicpc.net/short/status/10998/74/1
   /// 2등 - 같은 코드
   func solution_zzimss() {
