@@ -26,6 +26,9 @@ class Problem_2742 {
   func solution_4() {
     let n=Int(readLine()!)!;for i in 0..<n{print(n-i)}
   }
+  func solution_5() {
+    let a=(0..<Int(readLine()!)!);a.map{print(a.last!+1-$0)}
+  }
   /// https://www.acmicpc.net/short/status/2742/74/1
   /// 1등
   func solution_zzimss() {
