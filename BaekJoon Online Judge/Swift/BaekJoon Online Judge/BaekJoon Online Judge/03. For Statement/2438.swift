@@ -25,7 +25,7 @@ class Problem_2438 {
     var l="";(1...Int(readLine()!)!).map{$0;l+="*";print(l)}
   }
   /// https://www.acmicpc.net/short/status/2438/74/1
-  /// 2등
+  /// 2등 - 같은 코드 길이
   func solution_zzimss() {
     var l="";for _ in 1...Int(readLine()!)!{l+="*";print(l)}
   }

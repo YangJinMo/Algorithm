@@ -18,7 +18,7 @@ class Problem_2741 {
     for i in 1...Int(readLine()!)!{print(i)}
   }
   /// https://www.acmicpc.net/short/status/2741/74/1
-  /// 5등
+  /// 5등 - 같은 코드
   func solution_zzimss() {
     (1...Int(readLine()!)!).map{print($0)}
   }

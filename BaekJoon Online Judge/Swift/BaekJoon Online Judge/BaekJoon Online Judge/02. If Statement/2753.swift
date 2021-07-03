@@ -45,15 +45,18 @@ class Problem_2753 {
       }
     }
   }
-  /// https://www.acmicpc.net/short/status/2753/74/1
-  /// 2등
-  func solution_zzimss() {
+  func solution_3() {
     let l=Int(readLine()!)!;print(l%4==0&&l%100 != 0||l%400==0 ?1:0)
   }
-  func solution_wapas() {
-    let l=Int(readLine()!)!;print(l%4==0 ?l%100==0 ?l%400==0 ?1:0:1:0)
+  /// https://www.acmicpc.net/short/status/2753/74/1
+  /// 2등 - 같은 코드
+  func solution_zzimss() {
+    let l=Int(readLine()!)!;print(1>l%(l%25>0 ?4:16) ?1:0)
   }
   func solution_buttercrab() {
     let l=Int(readLine()!)!;print(1>l%(l%25>0 ?4:16) ?1:0)
+  }
+  func solution_wapas() {
+    let l=Int(readLine()!)!;print(l%4==0 ?l%100==0 ?l%400==0 ?1:0:1:0)
   }
 }

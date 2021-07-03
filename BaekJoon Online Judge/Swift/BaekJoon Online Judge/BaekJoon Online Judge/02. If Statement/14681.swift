@@ -33,7 +33,7 @@ class Problem_14681 {
     }
   }
   /// https://www.acmicpc.net/short/status/14681/74/1
-  /// 2등
+  /// 2등 - 같은 코드 길이
   func solution_zzimss() {
     let x=Int(readLine()!)!,y=Int(readLine()!)!;print(y>0 ?x>0 ?1:2:x>0 ?4:3)
   }

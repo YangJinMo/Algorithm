@@ -46,7 +46,7 @@ class Problem_1000 {
     let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])
   }
   /// https://www.acmicpc.net/short/status/1000/74/1
-  /// 3등
+  /// 3등 - 같은 코드
   func solution_zzimss() {
     print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))
   }
