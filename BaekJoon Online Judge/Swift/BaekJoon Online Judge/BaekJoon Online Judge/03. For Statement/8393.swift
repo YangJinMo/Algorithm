@@ -17,15 +17,18 @@ class Problem_8393 {
   func solution_1() {
     let n: Int = Int(readLine()!)!
     var sum: Int = 0
-
+    
     for i in 1...n {
-       sum += i
+      sum += i
     }
     print(sum)
   }
-  /// https://www.acmicpc.net/short/status/8393/74/1
-  /// 10등
-  func solution_zzimss() {
+  func solution_2() {
     print((1...Int(readLine()!)!).reduce(0,+))
+  }
+  /// https://www.acmicpc.net/short/status/8393/74/1
+  /// 2등 - 같은 코드
+  func solution_zzimss() {
+    let n=Int(readLine()!)!;print(n*(n+1)/2)
   }
 }
