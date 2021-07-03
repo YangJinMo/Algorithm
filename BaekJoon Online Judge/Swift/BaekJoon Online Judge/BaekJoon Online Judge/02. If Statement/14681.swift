@@ -32,15 +32,15 @@ class Problem_14681 {
       }
     }
   }
-  /// https://www.acmicpc.net/short/status/14681/74/1
-  /// 2등 - 같은 코드 길이
-  func solution_zzimss() {
+  func solution_2() {
     let x=Int(readLine()!)!,y=Int(readLine()!)!;print(y>0 ?x>0 ?1:2:x>0 ?4:3)
+  }
+  /// https://www.acmicpc.net/short/status/14681/74/1
+  /// 1등
+  func solution_zzimss() {
+    let x=Int(readLine()!)!;print(Int(readLine()!)!>0 ?x>0 ?1:2:x>0 ?4:3)
   }
   func solution_wapas() {
     let x=Int(readLine()!)!,y=Int(readLine()!)!;print(x>0 ?y>0 ?1:4:y>0 ?2:3)
-  }
-  func solution_forche() {
-    print(Int(readLine()!)!>0 ?Int(readLine()!)!>0 ?1:4:Int(readLine()!)!>0 ?2:3)
   }
 }
