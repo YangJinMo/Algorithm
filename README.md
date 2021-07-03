@@ -9,8 +9,7 @@ BaekJoon Online Judge (https://www.acmicpc.net/step)
 
 숏코딩
 - 1등 13개
-- 2등 7개
+- 2등 8개
 - 3등 1개
 - 5등 1개
-- 10등 1개
 - 나머지 3개
