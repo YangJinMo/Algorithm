@@ -31,21 +31,33 @@ class Problem_1000 {
      let line: String = readLine()!
      let intArr: [Int] = line.components(separatedBy: " ").map{ Int($0)! }
      */
-    let line: String = readLine() ?? ""
+    let line: String = readLine()!
     let lineArr: [String.SubSequence] = line.split(separator: " ")
     let intArr: [Int] = lineArr.map { Int($0)! }
     print(intArr.reduce(0, +))
   }
   func solution_3() {
-    print((readLine()?.split(separator: " ").map { Int($0)! }.reduce(0, +))!)
+    let intArr: [Int] = readLine()!.split(separator: " ").map { Int($0)! }
+    print(intArr.reduce(0, +))
   }
   func solution_4() {
     print((readLine()!.split(separator: " ").map { Int($0)! }.reduce(0, +)))
   }
   func solution_5() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])
+    let sum: Int = readLine()!
+      .split{$0==" "}
+      .map{Int($0)!}
+      .reduce(0, { (result: Int, element: Int) -> Int in
+        // 0 + 1 = 1
+        // 1 + 2 = 3
+        return result + element
+      })
+    print(sum)
   }
   func solution_6() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])
+  }
+  func solution_7() {
     let l=readLine()!.split{$0==" "};print(Int(l[0])!+Int(l[1])!)
   }
   /// https://www.acmicpc.net/short/status/1000/74/1
@@ -55,12 +67,23 @@ class Problem_1000 {
   }
 }
 
-// import Foundation is required to use components.
-// from readLine()!.components(separatedBy: " ")
-// to readLine()?.split(separator: " ")
-
 // readline: https://developer.apple.com/documentation/swift/1641199-readline
 // components: https://developer.apple.com/documentation/foundation/nsstring/1413214-components
 // map: https://developer.apple.com/documentation/swift/array/3017522-map
 // reduce: https://developer.apple.com/documentation/swift/array/2298686-reduce
 // split: https://developer.apple.com/documentation/swift/string/2894564-split
+
+// readLine() ?? ""
+// readLine()!
+/// There is no need to consider the case where the optional value contains 'nil', it is shorter, so use Force Unwrapping
+
+// func components(separatedBy separator: String) -> [String]
+// func split(separator: Character, maxSplits: Int = Int.max, omittingEmptySubsequences: Bool = true) -> [Substring]
+// .components(separatedBy: " ") -> [String]
+// .split(separator: " ") -> [String.SubSequence]
+/// Components need to import Foundation so you don't need to import them using split
+/// The return value and the argument value are also different.
+
+// .split(separator: " ")
+// .split{ $0 == " " }
+/// same
