@@ -29,9 +29,31 @@ class Problem_2439 {
   func solution_2() {
     var l=Int(readLine()!)!,s="";for i in 1...l{for j in 1...l{s+=l-j-i<0 ?"*":" "};print(s);s=""}
   }
+  func solution_3() {
+    var l=Int(readLine()!)!,s="";(1...l).map{i in(1...l).map{s+=l-$0-i<0 ?"*":" "};print(s);s=""}
+  }
+  func solution_4() {
+    var l=Int(readLine()!)!,s="";for i in 1...l{(1...l).map{s+=l-$0-i<0 ?"*":" "};print(s);s=""}
+  }
+  func solution_5() {
+    let l = Int(readLine()!)!
+    for i in 1...l {
+      var s = ""
+      for j in 1...l {
+        s += l-j-i<0 ?"*":" "
+      }
+      print(s)
+    }
+  }
+  func solution_6() {
+    var l=Int(readLine()!)!,s="";(1...l).map{for j in 1...l{s+=l-j-$0<0 ?"*":" "};print(s);s=""}
+  }
+  func solution_7() {
+    let l=Int(readLine()!)!;(1...l).map{var s="";for j in 1...l{s+=l-j-$0<0 ?"*":" "};print(s)}
+  }
   /// https://www.acmicpc.net/short/status/2439/74/1
   /// 1등
   func solution_zzimss() {
-    var l=Int(readLine()!)!,s="";(1...l).map{for j in 1...l{s+=l-j-$0<0 ?"*":" "};print(s);s=""}
+    let l=Int(readLine()!)!;for i in 1...l{var s="";(1...l).map{s+=l-$0-i<0 ?"*":" "};print(s)}
   }
 }
