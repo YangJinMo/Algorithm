@@ -20,9 +20,15 @@ class Problem_2742 {
   func solution_2() {
     for i in (1...Int(readLine()!)!).reversed(){print(i)}
   }
-  /// https://www.acmicpc.net/short/status/2741/74/1
-  /// 5등
-  func solution_zzimss() {
+  func solution_3() {
     (1...Int(readLine()!)!).reversed().map{print($0)}
+  }
+  func solution_4() {
+    let n=Int(readLine()!)!;for i in 0..<n{print(n-i)}
+  }
+  /// https://www.acmicpc.net/short/status/2742/74/1
+  /// 1등
+  func solution_zzimss() {
+    let n=Int(readLine()!)!;(0..<n).map{print(n-$0)}
   }
 }
