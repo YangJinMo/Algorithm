@@ -52,9 +52,11 @@ class Problem_2884 {
     var l=readLine()!.split{$0==" "}.map{Int($0)!},h=l[0]+23,m=l[1]+15;h+=m/60;print(h%24,m%60)
   }
   func solution_wapas() {
-    let i=readLine()!.split{$0==" "}.map{Int($0)!};var a=i[0]*60+i[1]-45;a=a<0 ?a+1440:a;print("\(a/60) \(a%60)")
+    //let i=readLine()!.split{$0==" "}.map{Int($0)!};var a=i[0]*60+i[1]-45;a=a<0 ?a+1440:a;print("\(a/60) \(a%60)")
+    var i=readLine()!.split{$0==" "}.map{Int($0)!},a=i[0]*60+i[1]-45;a=a<0 ?a+1440:a;print(a/60,a%60)
   }
   func solution_buttercrab() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!};var(h,m)=(l[0]+23,l[1]+15);h+=m/60;print(h%24,m%60)
+    //let l=readLine()!.split{$0==" "}.map{Int($0)!};var(h,m)=(l[0]+23,l[1]+15);h+=m/60;print(h%24,m%60)
+    var l=readLine()!.split{$0==" "}.map{Int($0)!},(h,m)=(l[0]+23,l[1]+15);h+=m/60;print(h%24,m%60)
   }
 }
