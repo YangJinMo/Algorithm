@@ -42,6 +42,9 @@ class Problem_10950 {
   func solution_4() {
     for _ in 1...Int(readLine()!)!{let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])}
   }
+  func solution_5() {
+    for _ in 1...Int(readLine()!)!{let l=readLine()!.split{$0==" "};print(Int(l[0])!+Int(l[1])!)}
+  }
   /// https://www.acmicpc.net/short/status/10950/74/1
   /// 2등 - 같은 코드 길이
   func solution_zzimss() {
