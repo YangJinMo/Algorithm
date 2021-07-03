@@ -27,9 +27,12 @@ class Problem_1008 {
   func solution_2() {
     print(1 / readLine()!.split(separator: " ").map{ Double($0)! }.reduce(1){ $1 / $0 })
   }
+  func solution_3() {
+    print(1/readLine()!.split{$0==" "}.map{Double($0)!}.reduce(1){$1/$0})
+  }
   /// https://www.acmicpc.net/short/status/1008/74/1
   /// 1등
   func solution_zzimss() {
-    print(1/readLine()!.split{$0==" "}.map{Double($0)!}.reduce(1){$1/$0})
+    let l=readLine()!.split{$0==" "}.map{Double($0)!};print(l[0]/l[1])
   }
 }
