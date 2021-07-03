@@ -15,11 +15,20 @@
 
 class Problem_1001 {
   func solution_1() {
-    print((readLine()?.split(separator: " ").map{ Int($0)! }.reduce(0, { x, y in -x - y }))!)
+    let lineArr = readLine()!.split{$0==" "}.map{Int($0)!}
+    let a = lineArr[0]
+    let b = lineArr[1]
+    print(a-b)
+  }
+  func solution_2() {
+    print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0, { x, y in -x - y }))
+  }
+  func solution_3() {
+    print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0){-$0-$1})
   }
   /// https://www.acmicpc.net/short/status/1001/74/1
-  /// 4등
+  /// 1등
   func solution_zzimss() {
-    print(readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0){-$0-$1})
+    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]-l[1])
   }
 }
