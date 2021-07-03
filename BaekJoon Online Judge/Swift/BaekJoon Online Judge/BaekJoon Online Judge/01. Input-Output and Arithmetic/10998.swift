@@ -26,6 +26,17 @@ class Problem_10998 {
   func solution_4() {
     let l=readLine()!.split{$0==" "};print(Int(l[0])!*Int(l[1])!)
   }
+  func solution_5() {
+    let product: Int = readLine()!
+      .split{$0==" "}
+      .map{Int($0)!}
+      .reduce(1, { (result: Int, element: Int) -> Int in
+        // 1 * 3 = 3
+        // 3 * 4 = 12
+        return result * element
+      })
+    print(product)
+  }
   /// https://www.acmicpc.net/short/status/10998/74/1
   /// 2등 - 같은 코드
   func solution_zzimss() {
