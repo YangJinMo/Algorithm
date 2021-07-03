@@ -36,6 +36,9 @@ class Problem_11021 {
   func solution_4() {
     for i in 1...Int(readLine()!)!{print("Case #\(i):",readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+))}
   }
+  func solution_5() {
+    (1...Int(readLine()!)!).map{let l=readLine()!.split{$0==" "};print("Case #\($0):",Int(l[0])!+Int(l[1])!)}
+  }
   /// https://www.acmicpc.net/short/status/11021/74/1
   /// 1등
   func solution_zzimss() {
