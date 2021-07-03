@@ -47,6 +47,9 @@ class Problem_11022 {
   func solution_7() {
     for i in 1...Int(readLine()!)!{let l=readLine()!.split{$0==" "}.map{Int($0)!};print("Case #\(i):",l[0],"+",l[1],"=",l[0]+l[1])}
   }
+  func solution_8() {
+    (1...Int(readLine()!)!).map{let l=readLine()!.split{$0==" "}.map{Int($0)!};print("Case #\($0):",l[0],"+",l[1],"=",l.reduce(0,+))}
+  }
   /// https://www.acmicpc.net/short/status/11022/74/1
   /// 1등
   func solution_zzimss() {
