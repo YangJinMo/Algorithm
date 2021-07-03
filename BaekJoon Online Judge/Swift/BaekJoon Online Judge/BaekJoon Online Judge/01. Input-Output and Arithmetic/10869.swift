@@ -35,9 +35,15 @@ class Problem_10869 {
     print(a / b)
     print(a % b)
   }
-  /// https://www.acmicpc.net/short/status/10869/74/1
-  /// 1등
-  func solution_zzimss() {
+  func solution_3() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1];print(a+b,a-b,a*b,a/b,a%b,separator:"\n")
+  }
+  func solution_4() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1];[a+b,a-b,a*b,a/b,a%b].map{print($0)}
+  }
+  /// https://www.acmicpc.net/short/status/10869/74/1
+  /// 2등 - 같은 코드
+  func solution_zzimss() {
+    let l=readLine()!.split{$0==" "},a=Int(l[0])!,b=Int(l[1])!;[a+b,a-b,a*b,a/b,a%b].map{print($0)}
   }
 }
