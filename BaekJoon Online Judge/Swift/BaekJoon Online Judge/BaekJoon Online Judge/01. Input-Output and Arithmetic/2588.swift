@@ -46,7 +46,4 @@ class Problem_2588 {
   func solution_zzimss() {
     let a=Int(readLine()!)!,b=Int(readLine()!)!;print(a*(b%10),a*(b/10%10),a*(b/100),a*b,separator:"\n")
   }
-  func solution_wapas() {
-    let i=Int(readLine()!)!,j=Int(readLine()!)!;print("\(i*(j%10))\n\(i*(j/10%10))\n\(i*(j/100))\n\(i*j)")
-  }
 }
