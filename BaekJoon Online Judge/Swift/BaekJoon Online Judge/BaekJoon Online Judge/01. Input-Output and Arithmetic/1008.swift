@@ -33,6 +33,21 @@ class Problem_1008 {
   func solution_4() {
     let l=readLine()!.split{$0==" "};print(Double(l[0])!/Double(l[1])!)
   }
+  func solution_5() {
+    let quotient: Double = readLine()!
+      .split{$0==" "}
+      .map{Double($0)!}
+      .reduce(1, { (result: Double, element: Double) -> Double in
+        // 1 / 1 = 1
+        // 3 / 1 = 3
+        return element / result
+        // 4 / 1 = 4
+        // 5 / 4 = 1.25
+      })
+    print(1/quotient)
+    // 0.3333333333333333
+    // 0.8
+  }
   /// https://www.acmicpc.net/short/status/1008/74/1
   /// 1등
   func solution_zzimss() {
