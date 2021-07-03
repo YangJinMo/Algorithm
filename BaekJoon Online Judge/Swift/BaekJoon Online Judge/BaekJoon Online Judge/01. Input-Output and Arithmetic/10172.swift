@@ -21,10 +21,17 @@ class Problem_10172 {
     print("|\"^\"`    |")
     print("||_/=\\\\__|")
   }
-  func solution_3() {
-    print(#"|\_/|\#n|q p|   /}\#n( 0 )"""\\#n|"^"`    |\#n||_/=\\__|"#)
+  func solution_2() {
+    print(#"|\_/|\#n|q p|   /}\#n( 0 )"""\\#n|"^"`    |\#n||_/=\\__|"#) // 67
   }
-  /// https://www.acmicpc.net/short/status/10172
+  func solution_3() {
+    print("|\\_/|","|q p|   /}","( 0 )\"\"\"\\","|\"^\"`    |","||_/=\\\\__|",separator:"\n")
+  }
+  func solution_4() {
+    ["|\\_/|","|q p|   /}","( 0 )\"\"\"\\","|\"^\"`    |","||_/=\\\\__|"].map{print($0)}
+  }
+  /// https://www.acmicpc.net/short/status/10172/74/1
+  /// 7등
   func solution_zzimss() {
     print(#"""
     |\_/|
@@ -32,6 +39,6 @@ class Problem_10172 {
     ( 0 )"""\
     |"^"`    |
     ||_/=\\__|
-    """#)
+    """#) // 65
   }
 }
