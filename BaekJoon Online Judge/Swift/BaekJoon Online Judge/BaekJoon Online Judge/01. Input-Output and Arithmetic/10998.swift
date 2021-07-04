@@ -37,6 +37,17 @@ class Problem_10998 {
       })
     print(product)
   }
+  func solution_6() {
+    let product: Int = readLine()!
+      .split{$0==" "}
+      .map{Int($0)!}
+      .reduce(into: 1, { (result: inout Int, element: Int) in
+        // 1 * 3 = 3
+        // 3 * 4 = 12
+        result *= element
+      })
+    print(product)
+  }
   /// https://www.acmicpc.net/short/status/10998/74/1
   /// 2등 - 같은 코드
   func solution_zzimss() {
