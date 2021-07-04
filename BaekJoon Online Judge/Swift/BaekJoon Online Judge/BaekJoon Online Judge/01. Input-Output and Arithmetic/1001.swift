@@ -40,6 +40,18 @@ class Problem_1001 {
       })
     print(difference)
   }
+  func solution_6() {
+    let difference: Int = readLine()!
+      .split{$0==" "}
+      .map{Int($0)!}
+      .reduce(into: 0, { (result: inout Int, element: Int) in
+        // -( 0) - 3 = -3
+        // -(-3) - 2 = 1
+        //result = -result - element
+        result = -(result + element)
+      })
+    print(difference)
+  }
   /// https://www.acmicpc.net/short/status/1001/74/1
   /// 1등
   func solution_zzimss() {
