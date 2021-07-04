@@ -48,6 +48,21 @@ class Problem_1008 {
     // 0.3333333333333333
     // 0.8
   }
+  func solution_6() {
+    let quotient: Double = readLine()!
+      .split{$0==" "}
+      .map{Double($0)!}
+      .reduce(into: 1, { (result: inout Double, element: Double) in
+        // 1 / 1 = 1
+        // 3 / 1 = 3
+        result = element / result
+        // 4 / 1 = 4
+        // 5 / 4 = 1.25
+      })
+    print(1/quotient)
+    // 0.3333333333333333
+    // 0.8
+  }
   /// https://www.acmicpc.net/short/status/1008/74/1
   /// 1등
   func solution_zzimss() {
