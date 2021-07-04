@@ -41,6 +41,25 @@ class Problem_10869 {
   func solution_4() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[0],b=l[1];[a+b,a-b,a*b,a/b,a%b].map{print($0)}
   }
+  func solution_5() {
+    let line: [String.SubSequence] = readLine()!.split{$0==" "}
+    
+    let arrInt: [Int] = line.map{ Int($0)! }
+    let arrDouble: [Double] = line.map{ Double($0)! }
+    
+    let sum: Int = arrInt.reduce(0, +)
+    let difference: Int = arrInt.reduce(0){ -$0 - $1 }
+    let product: Int = arrInt.reduce(1, *)
+    let quotient: Int = Int(1 / arrDouble.reduce(1){ $1 / $0 })
+    //let remainder: Int = arrInt[0] % arrInt[1]
+    let remainder: Int = Int(arrDouble[0].truncatingRemainder(dividingBy: arrDouble[1]))
+    
+    print(sum)
+    print(difference)
+    print(product)
+    print(quotient)
+    print(remainder)
+  }
   /// https://www.acmicpc.net/short/status/10869/74/1
   /// 2등 - 같은 코드
   func solution_zzimss() {
