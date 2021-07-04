@@ -55,9 +55,20 @@ class Problem_1000 {
     print(sum)
   }
   func solution_6() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])
+    let sum: Int = readLine()!
+      .split{$0==" "}
+      .map{Int($0)!}
+      .reduce(into: 0, { (result: inout Int, element: Int) in
+        // 0 + 1 = 1
+        // 1 + 2 = 3
+        result += element
+      })
+    print(sum)
   }
   func solution_7() {
+    let l=readLine()!.split{$0==" "}.map{Int($0)!};print(l[0]+l[1])
+  }
+  func solution_8() {
     let l=readLine()!.split{$0==" "};print(Int(l[0])!+Int(l[1])!)
   }
   /// https://www.acmicpc.net/short/status/1000/74/1
