@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09017987268A9CBD008EA26D /* 11021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09017986268A9CBD008EA26D /* 11021.swift */; };
+		091E048B2692DD8C00291AE3 /* 10952.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E048A2692DD8C00291AE3 /* 10952.swift */; };
 		0941BEA92683FA8E00942362 /* 2739.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BEA82683FA8E00942362 /* 2739.swift */; };
 		0945B17B268D966F007CBF70 /* 2438.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B17A268D966F007CBF70 /* 2438.swift */; };
 		0945B181268E256C007CBF70 /* 2439.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B180268E256C007CBF70 /* 2439.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		09017986268A9CBD008EA26D /* 11021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11021.swift; sourceTree = "<group>"; };
+		091E048A2692DD8C00291AE3 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
 		0941BEA82683FA8E00942362 /* 2739.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2739.swift; sourceTree = "<group>"; };
 		0945B17A268D966F007CBF70 /* 2438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2438.swift; sourceTree = "<group>"; };
 		0945B180268E256C007CBF70 /* 2439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2439.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091E04892692DD6F00291AE3 /* 04. While Statement */ = {
+			isa = PBXGroup;
+			children = (
+				091E048A2692DD8C00291AE3 /* 10952.swift */,
+			);
+			path = "04. While Statement";
+			sourceTree = "<group>";
+		};
 		0941BEA72683FA7000942362 /* 03. For Statement */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 				09655F51266DE1B700A9CA76 /* 01. Input-Output and Arithmetic */,
 				099CA8EB267CC485006DE887 /* 02. If Statement */,
 				0941BEA72683FA7000942362 /* 03. For Statement */,
+				091E04892692DD6F00291AE3 /* 04. While Statement */,
 				09655F44266DCF2D00A9CA76 /* main.swift */,
 			);
 			path = "BaekJoon Online Judge";
@@ -248,6 +259,7 @@
 				09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */,
 				09655F5A266DF5E900A9CA76 /* 10718.swift in Sources */,
 				0999481826734168005CEB35 /* 1008.swift in Sources */,
+				091E048B2692DD8C00291AE3 /* 10952.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
