@@ -68,7 +68,7 @@ class Problem_10952 {
   func solution_0() {
     while true{let l=readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0,+);if l==0{break}else{print(l)}}
   }
-  /// https://www.acmicpc.net/short/status/10871/74/1
+  /// https://www.acmicpc.net/short/status/10952/74/1
   /// 1등
   func solution_zzimss() {
     while true{let l=readLine()!.split{$0==" "},a=Int(l[0])!+Int(l[1])!;if a==0{break}else{print(a)}}
