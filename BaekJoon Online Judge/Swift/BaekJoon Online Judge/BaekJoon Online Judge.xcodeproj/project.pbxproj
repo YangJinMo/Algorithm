@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09017987268A9CBD008EA26D /* 11021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09017986268A9CBD008EA26D /* 11021.swift */; };
 		091E048B2692DD8C00291AE3 /* 10952.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E048A2692DD8C00291AE3 /* 10952.swift */; };
+		092A26362697FAF100153367 /* 2562.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A26352697FAF100153367 /* 2562.swift */; };
 		0941BEA92683FA8E00942362 /* 2739.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BEA82683FA8E00942362 /* 2739.swift */; };
 		0945B17B268D966F007CBF70 /* 2438.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B17A268D966F007CBF70 /* 2438.swift */; };
 		0945B181268E256C007CBF70 /* 2439.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B180268E256C007CBF70 /* 2439.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		09017986268A9CBD008EA26D /* 11021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11021.swift; sourceTree = "<group>"; };
 		091E048A2692DD8C00291AE3 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
+		092A26352697FAF100153367 /* 2562.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2562.swift; sourceTree = "<group>"; };
 		0941BEA82683FA8E00942362 /* 2739.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2739.swift; sourceTree = "<group>"; };
 		0945B17A268D966F007CBF70 /* 2438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2438.swift; sourceTree = "<group>"; };
 		0945B180268E256C007CBF70 /* 2439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2439.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				09C8E47826969BF000926E06 /* 10818.swift */,
+				092A26352697FAF100153367 /* 2562.swift */,
 			);
 			path = "05. 1 Dimensional Array";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				09F8BA84267108EC00280B6C /* 1001.swift in Sources */,
 				0970C66B2678DF7800022187 /* 10430.swift in Sources */,
 				0945B181268E256C007CBF70 /* 2439.swift in Sources */,
+				092A26362697FAF100153367 /* 2562.swift in Sources */,
 				09CF2C7926857FDB007A4997 /* 10950.swift in Sources */,
 				09C5524E2681580200A4E88D /* 14681.swift in Sources */,
 				09655F57266DF5B600A9CA76 /* 2557.swift in Sources */,
