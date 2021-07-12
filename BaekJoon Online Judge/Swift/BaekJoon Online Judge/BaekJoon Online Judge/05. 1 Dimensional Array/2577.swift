@@ -79,7 +79,7 @@ class Problem_2577 {
     }
   }
   func solution_5() {
-    var p=1,intArr=[Int]();while let l=readLine(){p*=Int(l)!};while p>0{intArr.insert(p%10,at:0);p/=10};for i in 0...9{print(intArr.filter{$0==i}.count)}
+    var p=1,a=[Int]();while let l=readLine(){p*=Int(l)!};while p>0{a.insert(p%10,at:0);p/=10};for i in 0...9{print(a.filter{$0==i}.count)}
   }
   func solution_6() {
     var a=[0,0,0,0,0,0,0,0,0,0];String([1,2,3].map{_ in Int(readLine()!)!}.reduce(1,*)).map{a[Int(String($0))!]+=1};a.map{print($0)}
