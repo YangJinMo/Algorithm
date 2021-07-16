@@ -25,7 +25,7 @@ class Problem_4344 {
       
       if let numberOfStudents: Int = s.first {
         var scores: [Int] = []
-
+        
         for i in 1...numberOfStudents {
           scores.append(s[i])
         }
@@ -42,7 +42,7 @@ class Problem_4344 {
       
       if let numberOfStudents: Int = s.first {
         var scores: [Int] = []
-
+        
         for i in 1...numberOfStudents {
           scores.append(s[i])
         }
@@ -72,9 +72,14 @@ class Problem_4344 {
     for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Double(String($0))!},n=s.removeFirst();print(String(format:"%.3f%%",Double(s.filter{$0>s.reduce(0,+)/n}.count)/Double(n)*100))}
   }
   func solution_8() {
-    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Double("\($0)")!},n=s.remove(at:0);print(String(format:"%.3f%%",Float(s.filter{$0>s.reduce(0,+)/n}.count)/Float(n)*100))}
+    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Float("\($0)")!},n=s.remove(at:0);print(String(format:"%.3f%%",Float(s.filter{$0>s.reduce(0,+)/n}.count)/Float(n)*100))}
   }
   func solution_9() {
+    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Float("\($0)")!},n=s[0],d=s.dropFirst();print(String(format:"%.3f%%",Float(d.filter{$0>d.reduce(0,+)/n}.count)/Float(n)*100))}
+    // print(s.dropFirst())
+    // [50.0, 50.0, 70.0, 80.0, 100.0] ...
+  }
+  func solution_10() {
     for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},a=s[1...s[0]];print(String(format:"%.3f%%",Float(a.filter{$0>a.reduce(0,+)/s[0]}.count)/Float(s[0])*100))}
   }
   /// https://www.acmicpc.net/short/status/4344/74/1
@@ -84,4 +89,35 @@ class Problem_4344 {
   }
 }
 
+// Swift String Format Specifiers
 // https://stackoverflow.com/questions/52332747/what-are-the-supported-swift-string-format-specifiers/52332748
+
+// mutating func removeFirst(_ k: Int)
+// https://developer.apple.com/documentation/swift/array/2886730-removefirst
+
+// func dropFirst(_ k: Int = 1) -> ArraySlice<Element>
+// https://developer.apple.com/documentation/swift/array/1688675-dropfirst
+
+// typealias SubSequence = ArraySlice<Element>
+// https://developer.apple.com/documentation/swift/array/subsequence
+
+/**
+ 스위프트에서 배열은 구조체로 선언되어 있습니다.
+ 구조체 내부에서 데이터 수정이 필요한 removeFirst는 mutating키워드가 붙었고
+ 그럴 필요가 없는 dropFirst는 mutating키워드가 붙어있지 않는 대신에 subsequence를 리턴해줍니다.
+ 
+ 또 dropFirst는 k의 디폴트 값이 1인 이유는 빈 배열에 dropFirst메서드를 호출해도 빈 subsequence를 리턴해줍니다.
+ 반면에 removeFirst는 배열 자체를 수정하기 때문에 디폴트 값이 없었습니다.
+ 빈 배열을 호출하게 된다면 에러가 발생하게 됩니다.
+ Thread 1: Fatal error: Can't remove first element from an empty collection
+ 
+ 출처: https://hyerios.tistory.com/173
+ 
+ swift는 String.SubSequence(=Substring) 라는 타입을 가진다.
+ 
+ substring은 새로운 메모리를 할당하지 않고, 기존 string의 메모리를 재사용한다고 합니다.
+ 메모리 재사용은 메모리 할당 비용을 줄여준다는 장점이 있습니다.
+ 하지만 장기로 string을 저장하는 경우에는 이 방법이 적절하지 않다고 합니다 ~~  (왜?)
+
+ 출처: https://do-misol.tistory.com/72
+ */

@@ -6,4 +6,4 @@
 //
 
 let problem = Problem_4344()
-problem.solution_6kj()
+problem.solution_9()
