@@ -19,13 +19,67 @@
  - 원문: https://www.acmicpc.net/problem/4673
  */
 
+// 1 + 1 + 0
+// n + n%10 + n/10 if != 0 {  }
+// n + n의 1의 자리 + n을 10으로 나눈 다음 1의 자리 + n을 10으로 나눈 값을 10으로 나눈 다음 1의 자리 // 0이 아닐 때까지
+// 97 + 7 + 9 + 0 == 113
+// 97 + 7 + if 9 != 0 { sum += 9 } + 0 == 113
+// n + n%10 + if n/10 != 0 { sum += n/10%10 } + ((n/10)/10) if != 0 {  }
+// 123 + 3 + 2 + 1 + 0
+// n + n%10 + n/10%10 + n/10%10/10
+// 1234 + 4 + 3 + 2 + 1 + 0
+// n + n%10 + n/10%10 + n/10%10/10
+
 class Problem_4673 {
   func solution_1() {
-    
+    var s: Set<Int> = []
+    for n in 1...10000 {
+      s.insert(d(n))
+      
+      if !s.contains(n) {
+        print(n)
+      }
+    }
+  }
+  func d(_ n: Int) -> Int {
+    var sum = n, now = n
+    while now != 0 {
+      sum += now % 10
+      now /= 10
+    }
+    return sum
+  }
+  func solution_2() {
+    var s: Set<Int> = []
+    for n in 1...10000 {
+      var sum = n, now = n
+      while now != 0 {
+        sum += now % 10
+        now /= 10
+      }
+      s.insert(sum)
+      
+      if !s.contains(n) {
+        print(n)
+      }
+    }
+  }
+  func solution_3() {
+    var s: Set<Int> = []
+    for n in 1...10000 {
+      s.insert(String(n).map{Int(String($0))!}.reduce(0,+)+n)
+      
+      if !s.contains(n) {
+        print(n)
+      }
+    }
+  }
+  func solution_4() {
+    var s:Set<Int>=[];for n in 1...10000{var sum=n,now=n;while now != 0{sum+=now%10;now/=10};s.insert(sum);if !s.contains(n){print(n)}}
   }
   /// https://www.acmicpc.net/short/status/4673/74/1
   /// 1등
   func solution_zzimss() {
-    
+    var s:Set<Int>=[];for n in 1...10000{s.insert(String(n).map{Int(String($0))!}.reduce(0,+)+n);if !s.contains(n){print(n)}}
   }
 }
