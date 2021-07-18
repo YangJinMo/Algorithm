@@ -75,11 +75,11 @@ class Problem_4673 {
     }
   }
   func solution_4() {
-    var s:Set<Int>=[];for n in 1...10000{var sum=n,now=n;while now != 0{sum+=now%10;now/=10};s.insert(sum);if !s.contains(n){print(n)}}
+    var s:Set<Int>=[];for n in 1...10000{s.insert(String(n).map{Int(String($0))!}.reduce(0,+)+n);if !s.contains(n){print(n)}}
   }
   /// https://www.acmicpc.net/short/status/4673/74/1
   /// 1등
   func solution_zzimss() {
-    var s:Set<Int>=[];for n in 1...10000{s.insert(String(n).map{Int(String($0))!}.reduce(0,+)+n);if !s.contains(n){print(n)}}
+    var s:Set<Int>=[];for n in 1...10000{var m=n,w=n;while w>0{m+=w%10;w/=10};s.insert(m);if !s.contains(n){print(n)}}
   }
 }
