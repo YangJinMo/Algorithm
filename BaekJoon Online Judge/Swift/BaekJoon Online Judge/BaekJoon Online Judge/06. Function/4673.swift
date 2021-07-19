@@ -77,6 +77,9 @@ class Problem_4673 {
   func solution_4() {
     var s:Set<Int>=[];for n in 1...10000{s.insert(String(n).map{Int(String($0))!}.reduce(0,+)+n);if !s.contains(n){print(n)}}
   }
+  func solution_5() {
+    var s:Set<Int>=[];for n in 1...10000{s.insert(String(n).map{Int("\($0)")!}.reduce(0,+)+n);if !s.contains(n){print(n)}}
+  }
   /// https://www.acmicpc.net/short/status/4673/74/1
   /// 1등
   func solution_zzimss() {
