@@ -7,11 +7,11 @@ BaekJoon Online Judge (https://www.acmicpc.net/step)
 03. For Statement - 10개
 04. While Statement - 3개
 05. 1 Dimensional Array - 7개
-06. Function - 1개
- - 총 37개
+06. Function - 2개
+ - 총 38개
 
 숏코딩
-- 1등 22개
+- 1등 23개
 - 2등 8개
 - 3등 3개
 - 5등 1개
