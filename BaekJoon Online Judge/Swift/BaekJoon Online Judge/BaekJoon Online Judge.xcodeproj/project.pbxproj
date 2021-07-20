@@ -27,6 +27,7 @@
 		096890E726936042007F835C /* 10951.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096890E626936042007F835C /* 10951.swift */; };
 		096A1F7B268C0FB200BD29D6 /* 11022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A1F7A268C0FB200BD29D6 /* 11022.swift */; };
 		0970C66B2678DF7800022187 /* 10430.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970C66A2678DF7800022187 /* 10430.swift */; };
+		098068BA26A70C8400D8AB1B /* 11654.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098068B926A70C8400D8AB1B /* 11654.swift */; };
 		09867218268999BD0003CCA0 /* 2742.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09867217268999BD0003CCA0 /* 2742.swift */; };
 		0986ADB926762762001A6EE2 /* 10869.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986ADB826762762001A6EE2 /* 10869.swift */; };
 		0988D73C2680B7F500FA59EA /* 2753.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988D73B2680B7F500FA59EA /* 2753.swift */; };
@@ -82,6 +83,7 @@
 		096890E626936042007F835C /* 10951.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10951.swift; sourceTree = "<group>"; };
 		096A1F7A268C0FB200BD29D6 /* 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11022.swift; sourceTree = "<group>"; };
 		0970C66A2678DF7800022187 /* 10430.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10430.swift; sourceTree = "<group>"; };
+		098068B926A70C8400D8AB1B /* 11654.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11654.swift; sourceTree = "<group>"; };
 		09867217268999BD0003CCA0 /* 2742.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2742.swift; sourceTree = "<group>"; };
 		0986ADB826762762001A6EE2 /* 10869.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10869.swift; sourceTree = "<group>"; };
 		0988D73B2680B7F500FA59EA /* 2753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2753.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				091E04892692DD6F00291AE3 /* 04. While Statement */,
 				09C8E47726969BCC00926E06 /* 05. 1 Dimensional Array */,
 				094C658B26A2ECB40032E2FF /* 06. Function */,
+				098068B826A70BA600D8AB1B /* 07. Strings */,
 				09655F44266DCF2D00A9CA76 /* main.swift */,
 			);
 			path = "BaekJoon Online Judge";
@@ -196,6 +199,14 @@
 				098E7376267A423200966A04 /* 2588.swift */,
 			);
 			path = "01. Input-Output and Arithmetic";
+			sourceTree = "<group>";
+		};
+		098068B826A70BA600D8AB1B /* 07. Strings */ = {
+			isa = PBXGroup;
+			children = (
+				098068B926A70C8400D8AB1B /* 11654.swift */,
+			);
+			path = "07. Strings";
 			sourceTree = "<group>";
 		};
 		099CA8EB267CC485006DE887 /* 02. If Statement */ = {
@@ -312,6 +323,7 @@
 				0945B184269029D1007CBF70 /* 10871.swift in Sources */,
 				09655F45266DCF2D00A9CA76 /* main.swift in Sources */,
 				098C819526875FF6008E7E1D /* 8393.swift in Sources */,
+				098068BA26A70C8400D8AB1B /* 11654.swift in Sources */,
 				09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */,
 				09D278FC2699853800FC0DD9 /* 2577.swift in Sources */,
 				09B78E30269BED2B00D8B645 /* 3052.swift in Sources */,
