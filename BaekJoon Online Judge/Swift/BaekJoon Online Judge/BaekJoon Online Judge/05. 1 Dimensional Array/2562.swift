@@ -79,9 +79,12 @@ class Problem_2562 {
   func solution_13() {
     var a=[0];while let b=readLine(){a.append(Int(b)!)};let v=a.max()!;print(v);print(a.firstIndex(of:v)!)
   }
+  func solution_14() {
+    var a=[0];while let b=readLine(){a.append(Int(b)!)};print(a.max()!);print(a.firstIndex(of:a.max()!)!)
+  }
   /// https://www.acmicpc.net/short/status/2562/74/1
   /// 1등
   func solution_zzimss() {
-    var a=[0];while let b=readLine(){a.append(Int(b)!)};print(a.max()!);print(a.firstIndex(of:a.max()!)!)
+    var a=[0];while let b=readLine(){a+=[Int(b)!]};print(a.max()!);print(a.firstIndex(of:a.max()!)!)
   }
 }

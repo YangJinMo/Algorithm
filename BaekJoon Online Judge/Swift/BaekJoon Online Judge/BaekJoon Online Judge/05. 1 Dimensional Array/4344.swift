@@ -57,29 +57,32 @@ class Problem_4344 {
     for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Int($0)!},a:[Int]=[],n=s.first!;for i in 1...n{a.append(s[i])};print(String(format:"%.3f",Double(a.filter{$0>a.reduce(0,+)/n}.count)/Double(n)*100)+"%")}
   }
   func solution_4() {
-    /// 컴파일 결과는 맞음, 백준에서는 틀림, 이유 모름
-    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},n=s[0];print(String(format:"%.3f%%",Float(s.filter{$0>(s.reduce(0,+)-n)/n}.count)/Float(n)*100))}
+    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Int($0)!},a:[Int]=[],n=s.first!;for i in 1...n{a+=[s[i]]};print(String(format:"%.3f",Double(a.filter{$0>a.reduce(0,+)/n}.count)/Double(n)*100)+"%")}
   }
   func solution_5() {
     /// 컴파일 결과는 맞음, 백준에서는 틀림, 이유 모름
-    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},n=s[0],r=s.reduce(0,+)-n;print(String(format:"%.3f%%",Float(s.filter{$0>r/n}.count)/Float(n)*100))}
+    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},n=s[0];print(String(format:"%.3f%%",Float(s.filter{$0>(s.reduce(0,+)-n)/n}.count)/Float(n)*100))}
   }
   func solution_6() {
     /// 컴파일 결과는 맞음, 백준에서는 틀림, 이유 모름
-    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},n=s[0];print(String(format:"%.3f%%",Float(s.filter{$0>s.reduce(-n,+)/n}.count)/Float(n)*100))}
+    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},n=s[0],r=s.reduce(0,+)-n;print(String(format:"%.3f%%",Float(s.filter{$0>r/n}.count)/Float(n)*100))}
   }
   func solution_7() {
-    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Double(String($0))!},n=s.removeFirst();print(String(format:"%.3f%%",Double(s.filter{$0>s.reduce(0,+)/n}.count)/Double(n)*100))}
+    /// 컴파일 결과는 맞음, 백준에서는 틀림, 이유 모름
+    for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},n=s[0];print(String(format:"%.3f%%",Float(s.filter{$0>s.reduce(-n,+)/n}.count)/Float(n)*100))}
   }
   func solution_8() {
-    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Float("\($0)")!},n=s.remove(at:0);print(String(format:"%.3f%%",Float(s.filter{$0>s.reduce(0,+)/n}.count)/Float(n)*100))}
+    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Double(String($0))!},n=s.removeFirst();print(String(format:"%.3f%%",Double(s.filter{$0>s.reduce(0,+)/n}.count)/Double(n)*100))}
   }
   func solution_9() {
+    for _ in 1...Int(readLine()!)!{var s=readLine()!.split{$0==" "}.map{Float("\($0)")!},n=s.remove(at:0);print(String(format:"%.3f%%",Float(s.filter{$0>s.reduce(0,+)/n}.count)/Float(n)*100))}
+  }
+  func solution_10() {
     for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Float("\($0)")!},n=s[0],d=s.dropFirst();print(String(format:"%.3f%%",Float(d.filter{$0>d.reduce(0,+)/n}.count)/Float(n)*100))}
     // print(s.dropFirst())
     // [50.0, 50.0, 70.0, 80.0, 100.0] ...
   }
-  func solution_10() {
+  func solution_11() {
     for _ in 1...Int(readLine()!)!{let s=readLine()!.split{$0==" "}.map{Int($0)!},a=s[1...s[0]];print(String(format:"%.3f%%",Float(a.filter{$0>a.reduce(0,+)/s[0]}.count)/Float(s[0])*100))}
   }
   /// https://www.acmicpc.net/short/status/4344/74/1
