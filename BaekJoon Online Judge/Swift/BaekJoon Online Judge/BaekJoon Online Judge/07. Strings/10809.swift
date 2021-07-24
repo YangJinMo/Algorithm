@@ -16,11 +16,58 @@
 
 class Problem_10809 {
   func solution_1() {
+    let alphabet: [String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    let line: [String] = readLine()!.map { String($0) }
     
+    for letter in alphabet {
+      if line.contains(letter), let index: Array<String>.Index = line.firstIndex(of: letter) {
+        print(index, terminator: " ")
+      } else {
+        print("-1", terminator:" ")
+      }
+    }
+  }
+  func solution_2() {
+    let aScalars: String.UnicodeScalarView = "a".unicodeScalars
+    let zScalars: String.UnicodeScalarView = "z".unicodeScalars
+    let aCode: UInt32 = aScalars[aScalars.startIndex].value
+    let zCode: UInt32 = zScalars[zScalars.startIndex].value
+    let alphabet: [Character] = (aCode...zCode).map { Character(UnicodeScalar($0)!) }
+    //let alphabet: [Character] = (0..<26).map { Character(UnicodeScalar(aCode + $0)!) }
+    let line: [String.Element] = readLine()!.map { $0 }
+    
+    for letter in alphabet {
+      if line.contains(letter), let index: Array<String>.Index = line.firstIndex(of: letter) {
+        print(index, terminator: " ")
+      } else {
+        print("-1", terminator:" ")
+      }
+    }
+  }
+  func solution_3() {
+    // import Foundation
+    let str: String = String(readLine()!)
+    
+    for i in Character("a").asciiValue!...Character("z").asciiValue! {
+      if let rangeI: Range<String.Index> = str.range(of: String(UnicodeScalar(i))) {
+        let index: String.IndexDistance = str.distance(from: str.startIndex, to: rangeI.lowerBound)
+        print(index, terminator: " ")
+      } else {
+        print("-1", terminator: " ")
+      }
+    }
+  }
+  func solution_4() {
+    let l = readLine()!
+    var a: [String] = []
+    for i in 97...122 {
+      a.append(String(Array(l).firstIndex(of: Character(UnicodeScalar(i)!)) ?? -1))
+    }
+    print(a.joined(separator: " "))
   }
   /// https://www.acmicpc.net/short/status/10809/74/1
   /// 등
   func solution_zzimss() {
-    
+    let l=readLine()!;print((97...122).map{String(Array(l).firstIndex(of:Character(UnicodeScalar($0)!)) ?? -1)}.joined(separator:" "))
   }
 }
