@@ -37,15 +37,10 @@ class Problem_10809 {
     let line: [String.Element] = readLine()!.map { $0 }
     
     for letter in alphabet {
-      if line.contains(letter), let index: Array<String>.Index = line.firstIndex(of: letter) {
-        print(index, terminator: " ")
-      } else {
-        print("-1", terminator:" ")
-      }
+      print(line.contains(letter) ? line.firstIndex(of: letter)! : -1, terminator: " ")
     }
   }
   func solution_3() {
-    // import Foundation
     let str: String = String(readLine()!)
     
     for i in Character("a").asciiValue!...Character("z").asciiValue! {
@@ -58,16 +53,42 @@ class Problem_10809 {
     }
   }
   func solution_4() {
-    let l = readLine()!
-    var a: [String] = []
-    for i in 97...122 {
-      a.append(String(Array(l).firstIndex(of: Character(UnicodeScalar(i)!)) ?? -1))
+    var arr = [Int](repeating: -1, count: 26)
+    _ = readLine()!.map{ Int($0.asciiValue!) - 97 }.enumerated().map{ if arr[$1] == -1 { arr[$1] = $0 } }
+    for i in arr { print(i, terminator: " ") }
+  }
+  func solution_5() {
+    var arr = [Int](repeating: -1, count: 26)
+    for (i, e) in readLine()!.map({ Int($0.asciiValue!) - 97 }).enumerated() {
+      if arr[e] == -1 {
+        arr[e] = i
+      }
     }
-    print(a.joined(separator: " "))
+    for i in arr { print(i, terminator: " ") }
+  }
+  func solution_6() {
+    let line = readLine()!
+    print(Array("abcdefghijklmnopqrstuvwxyz").map { line.contains($0) ? Array(line).firstIndex(of: $0)! : -1 }.map { String($0) }.joined(separator: " "))
+  }
+  func solution_66() {
+    let l=readLine()!;print(Array("abcdefghijklmnopqrstuvwxyz").map{l.contains($0) ? Array(l).firstIndex(of:$0)!:-1},terminator:" ")
+  }
+  func solution_7() {
+    let arr = Array(readLine()!)
+    for c in UnicodeScalar("a").value...UnicodeScalar("z").value {
+      print(arr.firstIndex(of: Character(UnicodeScalar(c)!)) ?? -1, terminator: " ")
+    }
+  }
+  func solution_8() {
+    let arr = Array(readLine()!)
+    print((UnicodeScalar("a").value...UnicodeScalar("z").value).map { String(arr.firstIndex(of: Character(UnicodeScalar($0)!)) ?? -1) }.joined(separator: " "))
+  }
+  func solution_9() {
+    let l=readLine()!;print((97...122).map{String(Array(l).firstIndex(of:Character(UnicodeScalar($0)!)) ?? -1)}.joined(separator:" "))
   }
   /// https://www.acmicpc.net/short/status/10809/74/1
   /// 1등
   func solution_zzimss() {
-    let l=readLine()!;print((97...122).map{String(Array(l).firstIndex(of:Character(UnicodeScalar($0)!)) ?? -1)}.joined(separator:" "))
+    let l=readLine()!;for c in 97...122{print(Array(l).firstIndex(of:Character(UnicodeScalar(c)!)) ?? -1,terminator:" ")}
   }
 }
