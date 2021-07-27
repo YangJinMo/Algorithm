@@ -17,11 +17,101 @@
 
 class Problem_2675 {
   func solution_1() {
+    let T: Int = Int(readLine()!)!
     
+    if T >= 1 && T <= 1000 {
+      for _ in 1...T {
+        let arr = readLine()!.split{$0==" "}
+        
+        if let first = arr.first {
+          if let R = Int(first) {
+            if let last = arr.last {
+              let S = String(last)
+              
+              if S.count >= 1 && S.count <= 20 {
+                for s in S {
+                  for _ in 1...R {
+                    print(s, terminator: "")
+                  }
+                }
+                print()
+              } else {
+                print("The length of S must be at least 1 and not exceed 20 characters.")
+              }
+            } else {
+              print("last value does not exist")
+            }
+          } else {
+            print("Failed to cast first value Int")
+          }
+        } else {
+          print("first value does not exist")
+        }
+      }
+    } else {
+      print("T is greater than or equal to 1 and less than or equal to 1000")
+    }
+  }
+  func solution_2() {
+    let T: Int = Int(readLine()!)!
+    
+    for _ in 1...T {
+      let arr = readLine()!.split{$0==" "}
+      let R = Int(arr.first!)!
+      let S = String(arr.last!)
+      
+      for s in S {
+        for _ in 1...R {
+          print(s, terminator: "")
+        }
+      }
+      print()
+    }
+  }
+  func solution_3() {
+    for _ in 1...Int(readLine()!)! {
+      let a = readLine()!.split{$0==" "}
+      for s in String(a[1]) {
+        for _ in 1...Int(a[0])!{
+          print(s, terminator: "")
+        }
+      }
+      print()
+    }
+  }
+  func solution_4() {
+    for _ in 1...Int(readLine()!)!{
+      let r = readLine()!.split { $0 == " " }.map { String($0) }
+      print(r[1].map { String(repeating: $0, count: Int(r[0])!) }.reduce("",+))
+    }
+  }
+  func solution_5() {
+    for _ in 1...Int(readLine()!)!{let r=readLine()!.split{$0==" "}.map{String($0)};print(r[1].map{String(repeating:$0,count:Int(r[0])!)}.reduce("",+))}
+  }
+  func solution_6() {
+    for _ in 0..<Int(readLine()!)! {
+      let arr = readLine()!.split{$0==" "}
+      var result = ""
+      for char in arr[1] {
+        result += addStr(Int(arr[0])!, String(char))
+      }
+      print(result)
+    }
+  }
+  func addStr(_ count: Int, _ string: String) -> String {
+    var result = ""
+    
+    for _ in 0..<count {
+      result += string
+    }
+    return result
+  }
+  func solution_7() {
+    for _ in 1...Int(readLine()!)!{let a=readLine()!.split{$0==" "};for s in a[1]{for _ in 1...Int(a[0])!{print(s,terminator:"")}};print()}
   }
   /// https://www.acmicpc.net/short/status/2675/74/1
   /// 1등
   func solution_zzimss() {
-    
+    for _ in 1...Int(readLine()!)!{let a=readLine()!.split{$0==" "};a[1].map{for _ in 1...Int(a[0])!{print($0,terminator:"")}};print()}
   }
 }
