@@ -18,17 +18,25 @@
 
 class Problem_2941 {
   func solution_1() {
+    var line = readLine()!
+    let croatianAlphabet = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
     
+    croatianAlphabet.forEach { line = line.replacingOccurrences(of: $0, with: "#") }
+    
+    print(line.count)
   }
   func solution_2() {
-    
+    var l=readLine()!;for a in ["c=","c-","dz=","d-","lj","nj","s=","z="]{l=l.replacingOccurrences(of:a,with:"#")};print(l.count)
   }
   func solution_3() {
-    
+    /// 컴파일 결과는 맞음, 백준에서는 틀림, 이유 모름
+    /// components의 separatedBy에는 String이 들어갈 수 없습니다. Character만 가능합니다.
+    var l=readLine()!.components(separatedBy: ["=","-","@",","]).joined()
+    ["dz","lj","nj"].forEach{l=l.replacingOccurrences(of:$0,with:"#")};print(l.count)
   }
   /// https://www.acmicpc.net/short/status/2941/74/1
-  /// 등
+  /// 1등
   func solution_zzimss() {
-    
+    var l=readLine()!;["c=","c-","dz=","d-","lj","nj","s=","z="].forEach{l=l.replacingOccurrences(of:$0,with:"#")};print(l.count)
   }
 }
