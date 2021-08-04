@@ -26,9 +26,6 @@ class Problem_10718 {
     (0...1).forEach{$0;print("강한친구 대한육군")}
   }
   func solution_4() {
-    (0...1).forEach{$0;print("강한친구 대한육군")}
-  }
-  func solution_5() {
     (0...1).map{$0;print("강한친구 대한육군")}
   }
   /// https://www.acmicpc.net/short/status/10718/74/1
