@@ -1,6 +1,7 @@
 # Algorithm
 
-BaekJoon Online Judge (https://www.acmicpc.net/step)
+##BaekJoon Online Judge
+(https://www.acmicpc.net/step)
 
 01. Input-Output and Arithmetic - 11개
 02. If Statement - 5개
@@ -9,10 +10,14 @@ BaekJoon Online Judge (https://www.acmicpc.net/step)
 05. 1 Dimensional Array - 7개
 06. Function - 2개
 07. Strings - 10개
- - 총 48개
+08. Math 1 - Mathematical Thinking - 1개
+ - 총 49개
 
-숏코딩
-- 1등 31개
+---
+
+###숏코딩
+
+- 1등 32개
 - 2등 8개
 - 3등 3개
 - 4등 1개
@@ -20,3 +25,5 @@ BaekJoon Online Judge (https://www.acmicpc.net/step)
 - 6등 1개
 - 7등 2개
 - 32등 1개
+
+---
