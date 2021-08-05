@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09017987268A9CBD008EA26D /* 11021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09017986268A9CBD008EA26D /* 11021.swift */; };
 		090FDB1E26AEA6AB00347205 /* 2675.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FDB1D26AEA6AB00347205 /* 2675.swift */; };
+		0913FACA26BB90950012BFA2 /* 1712.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913FAC926BB90950012BFA2 /* 1712.swift */; };
 		091E048B2692DD8C00291AE3 /* 10952.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E048A2692DD8C00291AE3 /* 10952.swift */; };
 		092A26362697FAF100153367 /* 2562.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A26352697FAF100153367 /* 2562.swift */; };
 		092F9815269ED29D001D9001 /* 8958.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F9814269ED29D001D9001 /* 8958.swift */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		09017986268A9CBD008EA26D /* 11021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11021.swift; sourceTree = "<group>"; };
 		090FDB1D26AEA6AB00347205 /* 2675.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2675.swift; sourceTree = "<group>"; };
+		0913FAC926BB90950012BFA2 /* 1712.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1712.swift; sourceTree = "<group>"; };
 		091E048A2692DD8C00291AE3 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
 		092A26352697FAF100153367 /* 2562.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2562.swift; sourceTree = "<group>"; };
 		092F9814269ED29D001D9001 /* 8958.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8958.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				09FA0A0326B532DD0091BA81 /* 5622.swift */,
 				09DE27F726B7B9FD006CD442 /* 2941.swift */,
 				096718CC26B912DF00DBD491 /* 1316.swift */,
+				0913FAC926BB90950012BFA2 /* 1712.swift */,
 			);
 			path = "07. Strings";
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				090FDB1E26AEA6AB00347205 /* 2675.swift in Sources */,
 				09017987268A9CBD008EA26D /* 11021.swift in Sources */,
 				09F8BA84267108EC00280B6C /* 1001.swift in Sources */,
+				0913FACA26BB90950012BFA2 /* 1712.swift in Sources */,
 				0970C66B2678DF7800022187 /* 10430.swift in Sources */,
 				0945B181268E256C007CBF70 /* 2439.swift in Sources */,
 				092A26362697FAF100153367 /* 2562.swift in Sources */,
