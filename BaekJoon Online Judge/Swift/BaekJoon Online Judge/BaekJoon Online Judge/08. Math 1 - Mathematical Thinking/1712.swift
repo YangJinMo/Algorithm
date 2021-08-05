@@ -39,6 +39,6 @@ class Problem_1712 {
   /// https://www.acmicpc.net/short/status/1712/74/1
   /// 1등
   func solution_zzimss() {
-    let l=readLine()!.split{$0==" "}.map{Int($0)!},b=(l[2]-l[1]);print(b>0 ?l[0]/b+1:-1)
+    let l=readLine()!.split{$0==" "}.map{Int($0)!},b=l[2]-l[1];print(b>0 ?l[0]/b+1:-1)
   }
 }
