@@ -13,12 +13,12 @@
 05. 1 Dimensional Array - 7개
 06. Function - 2개
 07. Strings - 10개
-08. Math 1 - Mathematical Thinking - 1개
- - 총 49개
+08. Math 1 - Mathematical Thinking - 2개
+ - 총 50개
 
 #### 숏코딩
 
-- 1등 32개
+- 1등 33개
 - 2등 8개
 - 3등 3개
 - 4등 1개
