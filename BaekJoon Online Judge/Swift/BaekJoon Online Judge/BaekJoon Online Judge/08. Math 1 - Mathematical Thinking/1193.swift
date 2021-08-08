@@ -42,6 +42,21 @@ class Problem_1193 {
     }
   }
   func solution_2() {
+    var p = Int(readLine()!)!
+    var i = 1
+    
+    while p > i {
+      p -= i
+      i += 1
+    }
+    
+    if i % 2 == 1 {
+      print("\(i-p+1)/\(p)")
+    } else {
+      print("\(p)/\(i-p+1)")
+    }
+  }
+  func solution_3() {
     let x = Int(readLine()!)!
     var c = 1
     
@@ -56,9 +71,12 @@ class Problem_1193 {
       print("\(b)/\(a)")
     }
   }
+  func solution_4() {
+    var x=Int(readLine()!)!,c=1;while true{x-=c;if x<=0{break};c+=1};print(c%2==1 ?"\(-x+1)/\(x+c)":"\(x+c)/\(-x+1)")
+  }
   /// https://www.acmicpc.net/short/status/1193/74/1
   /// 1등
   func solution_zzimss() {
-    var x=Int(readLine()!)!,c=1;while true{x-=c;if x<=0{break};c+=1};print(c%2==1 ?"\(-x+1)/\(x+c)":"\(x+c)/\(-x+1)")
+    var p=Int(readLine()!)!,i=1;while p>i{p-=i;i+=1};print(i%2==1 ?"\(i-p+1)/\(p)":"\(p)/\(i-p+1)")
   }
 }
