@@ -15,6 +15,8 @@
  - 원문: https://www.acmicpc.net/problem/2869
  */
 
+import Foundation
+
 class Problem_2869 {
   func solution_1() {
     /// 시간 초과
@@ -61,7 +63,7 @@ class Problem_2869 {
     // (a-b)*i+b >= v
     // (a-b)*i >= v-b
     let x = (v-b)/(a-b)
-    let y = (v-b)%(a-b)
+    let y = (v-b)%(a-b) > 0 ? 1 : 0
     print(x+y)
   }
   func solution_4() {
@@ -69,6 +71,11 @@ class Problem_2869 {
   }
   func solution_5() {
     let l=readLine()!.split{$0==" "}.map{Int($0)!},a=l[2]-l[1],b=l[0]-l[1];print(a%b>0 ?a/b+1:a/b)
+  }
+  func solution_6() {
+    // import Foundation
+    let l = readLine()!.split{$0==" "}.map{Double($0)!}
+    print(Int(ceil((l[2]-l[0])/(l[0]-l[1]))+1))
   }
   /// https://www.acmicpc.net/short/status/2869/74/1
   /// 2등 - 같은 코드
