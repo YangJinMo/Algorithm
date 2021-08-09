@@ -14,7 +14,7 @@
  - 원문: https://www.acmicpc.net/problem/4344
  */
 
-import Foundation /// round , String(format:
+import Foundation /// round, String(format: _ arguments)
 
 class Problem_4344 {
   func solution_1() {

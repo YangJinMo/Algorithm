@@ -75,7 +75,7 @@ class Problem_2869 {
   func solution_6() {
     // import Foundation
     let l = readLine()!.split{$0==" "}.map{Double($0)!}
-    print(Int(ceil((l[2]-l[0])/(l[0]-l[1]))+1))
+    print(Int(ceil((l[2]-l[0])/(l[0]-l[1]))+1)) /// 올림
   }
   /// https://www.acmicpc.net/short/status/2869/74/1
   /// 2등 - 같은 코드
