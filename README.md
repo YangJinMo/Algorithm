@@ -13,8 +13,8 @@
 05. 1 Dimensional Array - 7개
 06. Function - 2개
 07. Strings - 10개
-08. Math 1 - Mathematical Thinking - 7개
- - 총 55개
+08. Math 1 - Mathematical Thinking - 9개
+ - 총 57개
 
 #### 숏코딩
 
