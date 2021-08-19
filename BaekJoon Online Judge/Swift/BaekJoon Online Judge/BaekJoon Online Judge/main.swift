@@ -5,5 +5,5 @@
 //  Created by Jmy on 2021/06/07.
 //
 
-let problem = Problem_2839()
-problem.solution_zzimss()
+let problem = Problem_10757()
+problem.solution_1()
