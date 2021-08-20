@@ -13,46 +13,166 @@
  - 원문: https://www.acmicpc.net/problem/10757
  */
 
+/**
+ - 예제 1
+ - 입력: 9223372036854775807 9223372036854775808
+ - 출력: 18446744073709551615
+ */
+//119223372036854775807 19223372036854775808
 class Problem_10757 {
-  func solution_1() {
-    let line = "9223372036854775807 9223372036854775808"
-    let arr = line.split(separator: " ").map(String.init) //readLine()!.split(separator: " ")
-    let a = arr[0] // readLine()!
-    let b = arr[1] // readLine()!
-    
-    print(a.endIndex)
-    print(a[a.startIndex])
-    
-    print("test1", a[a.index(before: a.endIndex)])
-    print("test2", a[a.index(a.endIndex, offsetBy: -1)])
-    
-    for i in 1...a.count {
-        let A = Int(String(a[a.index(a.endIndex, offsetBy: -i)])) ?? 0
-        let B = Int(String(b[b.index(b.endIndex, offsetBy: -i)])) ?? 0
-        print(A + B)
-        //print("test3", a[a.index(a.endIndex, offsetBy: -i)])
+    /// 런타임 에러: a.count로 돌리기 때문에 개수가 다르면 안되는 코드
+    func solution_1() {
+        let arr = readLine()!.split(separator: " ").map{String($0)}
+        let a = arr[0]
+        let b = arr[1]
+        
+        var strArr: [Int] = []
+        var carry = 0
+        
+        for i in 1...a.count {
+            let A = Int(String(a[a.index(a.endIndex, offsetBy: -i)])) ?? 0
+            let B = Int(String(b[b.index(b.endIndex, offsetBy: -i)])) ?? 0
+            let sum = A + B + carry
+            
+            strArr.insert(sum % 10, at: 0)
+            carry = sum / 10
+        }
+        
+        if carry > 0 {
+            strArr.insert(carry, at: 0)
+        }
+        
+        print(strArr.map{String($0)}.joined())
     }
-  }
-  func solution_2() {
-    
-  }
-  func solution_3() {
-    
-  }
-  func solution_4() {
-    
-  }
-  func solution_5() {
-    
-  }
-  func solution_6() {
-    
-  }
-  /// https://www.acmicpc.net/short/status/10757/74/1
-  /// 등
-  func solution_zzimss() {
-    
-  }
+    func solution_22() {
+        let arr = readLine()!.split(separator: " ").map{String($0)}
+        var a = arr[0]
+        var b = arr[1]
+        let betterCount = a.count > b.count ? a.count : b.count
+        
+        var strArr: [Int] = []
+        var carry = 0
+        
+        for _ in 1...betterCount {
+            let A = Int(String(a.popLast() ?? " ")) ?? 0
+            let B = Int(String(b.popLast() ?? " ")) ?? 0
+            let sum = A + B + carry
+            
+            strArr.insert(sum % 10, at: 0)
+            carry = sum / 10
+        }
+        
+        if carry > 0 {
+            strArr.insert(carry, at: 0)
+        }
+        
+        print(strArr.map{String($0)}.joined())
+    }
+    func solution_222() {
+        var l=readLine()!.split{$0==" "},a="\(l[0])",b="\(l[1])",c=0,u=0,r:[Int]=[]
+        
+        while a.count+b.count>0 {
+            let A = Int(String(a.popLast() ?? " ")) ?? 0
+            let B = Int(String(b.popLast() ?? " ")) ?? 0
+            u=A+B+c
+            c=u/10
+            r.insert(u%10,at:0)
+        }
+        
+        if c>0 {
+            r.insert(c,at:0)
+        }
+        
+        print(r.map{"\($0)"}.joined())
+    }
+    func solution_2() {
+        
+        func splitNum(_ str: String) -> [Int] {
+            let intArr = str.map{ Int(String($0))! }
+            return intArr
+        }
+        
+        func isLonger(_ a: [Int],_ b: [Int]) -> Bool {
+            return a.count >= b.count ? true : false
+        }
+        
+        func addNum(_ l: [Int],_ s: [Int]) -> String {
+            var long = l, short = s
+            var carry = 0, sum = 0
+            var result = ""
+            
+            func updateResult() {
+                if sum > 9 {
+                    carry = 1
+                    sum = long.isEmpty ? sum : sum-10
+                }
+                result = String(sum) + result
+            }
+            
+            while !short.isEmpty {
+                sum = long.last! + short.last! + carry
+                carry = 0
+                long.removeLast()
+                short.removeLast()
+                updateResult()
+            }
+            while !long.isEmpty {
+                sum = long.last! + carry
+                carry = 0
+                long.removeLast()
+                updateResult()
+            }
+            return result
+            
+        }
+        let arr = readLine()!.split(separator: " ").map(String.init)
+        let a = splitNum(arr[0]), b = splitNum(arr[1])
+        let l = isLonger(a, b) ? a : b
+        let s = isLonger(a, b) ? b : a
+        print(addNum(l, s))
+    }
+    func solution_3() {
+        let num = readLine()!.split(separator: " ").map { String($0) }
+        var A = Array(num[0]).map { Int(String($0))! }
+        var B = Array(num[1]).map { Int(String($0))! }
+        if A.count > B.count {
+            while A.count != B.count {
+                B.insert(0, at: 0)
+            }
+        } else if A.count < B.count {
+            while A.count != B.count {
+                A.insert(0, at: 0)
+            }
+        }
+        B.insert(0, at: 0)
+        A.insert(0, at: 0)
+        var i = A.count - 1
+        while i != 0 {
+            if A[i] + B[i] >= 10 {
+                A[i - 1] += (A[i] + B[i]) / 10
+            }
+            A[i] = (A[i] + B[i]) % 10
+            i -= 1
+        }
+        if A[0] == 0 {
+            A.remove(at: 0)
+        }
+        print(A.map { String($0) }.joined())
+    }
+    func solution_4() {
+        
+    }
+    func solution_5() {
+        
+    }
+    func solution_6() {
+        
+    }
+    /// https://www.acmicpc.net/short/status/10757/74/1
+    /// 등
+    func solution_zzimss() {
+        
+    }
 }
 extension String {
     
