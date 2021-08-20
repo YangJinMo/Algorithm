@@ -6,4 +6,4 @@
 //
 
 let problem = Problem_10757()
-problem.solution_222()
+problem.solution_zzimss()

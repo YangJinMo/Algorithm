@@ -18,15 +18,15 @@
  - 입력: 9223372036854775807 9223372036854775808
  - 출력: 18446744073709551615
  */
-//119223372036854775807 19223372036854775808
+
 class Problem_10757 {
     /// 런타임 에러: a.count로 돌리기 때문에 개수가 다르면 안되는 코드
     func solution_1() {
-        let arr = readLine()!.split(separator: " ").map{String($0)}
+        let arr = readLine()!.split(separator: " ").map(String.init)
         let a = arr[0]
         let b = arr[1]
         
-        var strArr: [Int] = []
+        var intArr: [Int] = []
         var carry = 0
         
         for i in 1...a.count {
@@ -34,23 +34,23 @@ class Problem_10757 {
             let B = Int(String(b[b.index(b.endIndex, offsetBy: -i)])) ?? 0
             let sum = A + B + carry
             
-            strArr.insert(sum % 10, at: 0)
             carry = sum / 10
+            intArr.insert(sum % 10, at: 0)
         }
         
         if carry > 0 {
-            strArr.insert(carry, at: 0)
+            intArr.insert(carry, at: 0)
         }
         
-        print(strArr.map{String($0)}.joined())
+        print(intArr.map(String.init).joined())
     }
-    func solution_22() {
-        let arr = readLine()!.split(separator: " ").map{String($0)}
+    func solution_2_1() {
+        let arr = readLine()!.split(separator: " ").map(String.init)
         var a = arr[0]
         var b = arr[1]
         let betterCount = a.count > b.count ? a.count : b.count
         
-        var strArr: [Int] = []
+        var intArr: [Int] = []
         var carry = 0
         
         for _ in 1...betterCount {
@@ -58,25 +58,101 @@ class Problem_10757 {
             let B = Int(String(b.popLast() ?? " ")) ?? 0
             let sum = A + B + carry
             
-            strArr.insert(sum % 10, at: 0)
             carry = sum / 10
+            intArr.insert(sum % 10, at: 0)
         }
         
         if carry > 0 {
-            strArr.insert(carry, at: 0)
+            intArr.insert(carry, at: 0)
         }
         
-        print(strArr.map{String($0)}.joined())
+        print(intArr.map(String.init).joined())
     }
-    func solution_222() {
-        var l=readLine()!.split{$0==" "},a="\(l[0])",b="\(l[1])",c=0,u=0,r:[Int]=[]
+    func solution_2_2() {
+        let arr = readLine()!.split(separator: " ").map(String.init)
+        var a = arr[0]
+        var b = arr[1]
+        let betterCount = a.count > b.count ? a : b
         
-        while a.count+b.count>0 {
+        var intArr: [Int] = []
+        var carry = 0
+        
+        for _ in betterCount {
             let A = Int(String(a.popLast() ?? " ")) ?? 0
             let B = Int(String(b.popLast() ?? " ")) ?? 0
-            u=A+B+c
-            c=u/10
-            r.insert(u%10,at:0)
+            let sum = A + B + carry
+            
+            carry = sum / 10
+            intArr.insert(sum % 10, at: 0)
+        }
+        
+        if carry > 0 {
+            intArr.insert(carry, at: 0)
+        }
+        
+        print(intArr.map(String.init).joined())
+    }
+    func solution_2_3() {
+        var l=readLine()!.split{$0==" "},a="\(l[0])",b="\(l[1])",c=0,m=0,r:[Int]=[],g=a.count>b.count ?a:b;for _ in g{m=(Int(String(a.popLast() ?? " ")) ?? 0)+(Int(String(b.popLast() ?? " ")) ?? 0)+c;c=m/10;r.insert(m%10,at:0)};if c>0{r.insert(c,at:0)};print(r.map{String($0)}.joined())
+    }
+    /// 시간 초과: count 반복 때문으로 예상
+    func solution_2_4() {
+        let arr = readLine()!.split(separator: " ").map(String.init)
+        var a = arr[0]
+        var b = arr[1]
+        
+        var intArr: [Int] = []
+        var carry = 0
+        
+        while a.count + b.count > 0 {
+            let A = Int(String(a.popLast() ?? " ")) ?? 0
+            let B = Int(String(b.popLast() ?? " ")) ?? 0
+            let sum = A + B + carry
+            
+            carry = sum / 10
+            intArr.insert(sum % 10, at: 0)
+        }
+        
+        if carry > 0 {
+            intArr.insert(carry, at: 0)
+        }
+        
+        print(intArr.map(String.init).joined())
+    }
+    /// 시간 초과
+    func solution_2_5() {
+        func f(_ s: inout String) -> Int {
+            Int(String(s.popLast() ?? " ")) ?? 0
+        }
+        
+        let arr = readLine()!.split(separator: " ").map(String.init)
+        var a = arr[0]
+        var b = arr[1]
+        
+        var intArr: [Int] = []
+        var carry = 0
+        
+        while a.count + b.count > 0 {
+            let sum = f(&a) + f(&b) + carry
+            
+            carry = sum / 10
+            intArr.insert(sum % 10, at: 0)
+        }
+        
+        if carry > 0 {
+            intArr.insert(carry, at: 0)
+        }
+        
+        print(intArr.map(String.init).joined())
+    }
+    /// 시간 초과
+    func solution_2_6() {
+        var l=readLine()!.split{$0==" "},a="\(l[0])",b="\(l[1])",c=0,m=0,r:[Int]=[]
+        
+        while a.count+b.count>0 {
+            m=(Int("\(a.popLast() ?? " ")") ?? 0)+(Int("\(b.popLast() ?? " ")") ?? 0)+c
+            c=m/10
+            r.insert(m%10,at:0)
         }
         
         if c>0 {
@@ -85,7 +161,7 @@ class Problem_10757 {
         
         print(r.map{"\($0)"}.joined())
     }
-    func solution_2() {
+    func solution_3() {
         
         func splitNum(_ str: String) -> [Int] {
             let intArr = str.map{ Int(String($0))! }
@@ -131,7 +207,7 @@ class Problem_10757 {
         let s = isLonger(a, b) ? b : a
         print(addNum(l, s))
     }
-    func solution_3() {
+    func solution_4() {
         let num = readLine()!.split(separator: " ").map { String($0) }
         var A = Array(num[0]).map { Int(String($0))! }
         var B = Array(num[1]).map { Int(String($0))! }
@@ -159,19 +235,69 @@ class Problem_10757 {
         }
         print(A.map { String($0) }.joined())
     }
-    func solution_4() {
-        
-    }
     func solution_5() {
-        
+        let arr = readLine()!.split(separator: " ").map { String($0) }
+        var A = Array(arr[0]).map { Int(String($0))! }
+        var B = Array(arr[1]).map { Int(String($0))! }
+
+        var ALen = A.count, BLen = B.count
+        if ALen > BLen {
+            swap(&A,&B)
+            BLen = ALen
+        }
+
+        while BLen > A.count {
+            A.insert(0, at: 0)
+        }
+
+        var Ans = [Int](repeating: 0, count: BLen+1)
+        var idx = BLen-1
+        while idx >= 0 {
+            Ans[idx] += (A[idx] + B[idx] + Ans[idx+1]) / 10
+            Ans[idx+1] = (A[idx] + B[idx] + Ans[idx+1]) % 10
+            idx -= 1
+        }
+
+        while Ans.count > 0 && Ans.first! == 0 {
+            Ans.removeFirst()
+        }
+
+        print(Ans.map { String($0) }.joined())
     }
-    func solution_6() {
-        
+    func solution_6_1() {
+        var nums: [String] = readLine()!.split(separator: " ").map({ String($0) })
+        var result = [String]()
+        var next = 0
+
+        while nums.filter({ $0 == "" }).count < 2 {
+            var first = 0, second = 0
+            if let num = nums[0].popLast() {
+                first = Int(String(num))!
+            }
+            if let num = nums[1].popLast() {
+                second = Int(String(num))!
+            }
+            
+            let sum = first + second + next
+            if sum > 9 {
+                result.insert(String(String(sum).last!), at: 0)
+                next = 1
+            } else {
+                result.insert(String(sum), at: 0)
+                next = 0
+            }
+        }
+
+        if next == 1 {
+            result.insert("1", at: 0)
+        }
+
+        print(result.joined())
     }
     /// https://www.acmicpc.net/short/status/10757/74/1
-    /// 등
+    /// 1등
     func solution_zzimss() {
-        
+        var l=readLine()!.split{$0==" "},a="\(l[0])",b="\(l[1])",c=0,m=0,r:[Int]=[];(a.count>b.count ?a:b).map{$0;m=(Int("\(a.popLast() ?? " ")") ?? 0)+(Int("\(b.popLast() ?? " ")") ?? 0)+c;c=m/10;r.insert(m%10,at:0)};if c>0{r.insert(c,at:0)};print(r.map{"\($0)"}.joined())
     }
 }
 extension String {
@@ -188,14 +314,14 @@ extension String {
     // print(firstName) // Marie
     subscript(_ range: Range<Int>) -> String {
         let fromIndex = self.index(self.startIndex, offsetBy: range.startIndex)
-        let toIndex = self.index(self.startIndex,offsetBy: range.endIndex)
+        let toIndex = self.index(self.startIndex, offsetBy: range.endIndex)
         return String(self[fromIndex..<toIndex])
     }
 }
 extension Array {
     
     // ~= 연산자
-    // 대상이 특정 범위에 속하는지 범위를 체크하는 연산자 입니다.
+    // 대상이 특정 범위에 속하는지 범위를 체크하는 연산자입니다.
     subscript(safe index: Int) -> Element? {
         // iOS 9 or later
         return indices ~= index ? self[index] : nil
