@@ -152,6 +152,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090B661926D5114500D00096 /* 09. Math 2 - Prime and Geometric */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "09. Math 2 - Prime and Geometric";
+			sourceTree = "<group>";
+		};
 		0913FACC26BBA5000012BFA2 /* 08. Math 1 - Mathematical Thinking */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +238,7 @@
 				094C658B26A2ECB40032E2FF /* 06. Function */,
 				098068B826A70BA600D8AB1B /* 07. Strings */,
 				0913FACC26BBA5000012BFA2 /* 08. Math 1 - Mathematical Thinking */,
+				090B661926D5114500D00096 /* 09. Math 2 - Prime and Geometric */,
 				09655F44266DCF2D00A9CA76 /* main.swift */,
 			);
 			path = "BaekJoon Online Judge";
