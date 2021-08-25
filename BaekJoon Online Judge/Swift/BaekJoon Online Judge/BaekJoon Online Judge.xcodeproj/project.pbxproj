@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09017987268A9CBD008EA26D /* 11021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09017986268A9CBD008EA26D /* 11021.swift */; };
+		0908559F26D6566100E6EF08 /* 1978.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0908559E26D6566100E6EF08 /* 1978.swift */; };
 		090FDB1E26AEA6AB00347205 /* 2675.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FDB1D26AEA6AB00347205 /* 2675.swift */; };
 		0913FACA26BB90950012BFA2 /* 1712.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913FAC926BB90950012BFA2 /* 1712.swift */; };
 		091E048B2692DD8C00291AE3 /* 10952.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E048A2692DD8C00291AE3 /* 10952.swift */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		09017986268A9CBD008EA26D /* 11021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11021.swift; sourceTree = "<group>"; };
+		0908559E26D6566100E6EF08 /* 1978.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1978.swift; sourceTree = "<group>"; };
 		090FDB1D26AEA6AB00347205 /* 2675.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2675.swift; sourceTree = "<group>"; };
 		0913FAC926BB90950012BFA2 /* 1712.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1712.swift; sourceTree = "<group>"; };
 		091E048A2692DD8C00291AE3 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		090B661926D5114500D00096 /* 09. Math 2 - Prime and Geometric */ = {
 			isa = PBXGroup;
 			children = (
+				0908559E26D6566100E6EF08 /* 1978.swift */,
 			);
 			path = "09. Math 2 - Prime and Geometric";
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				094C6589269FE9740032E2FF /* 4344.swift in Sources */,
 				09C839552682FB980044ED78 /* 2884.swift in Sources */,
 				09A587D026BD006400C60F03 /* 2292.swift in Sources */,
+				0908559F26D6566100E6EF08 /* 1978.swift in Sources */,
 				09DE27F826B7B9FD006CD442 /* 2941.swift in Sources */,
 				09EFB34626A8E0D500F020D3 /* 11720.swift in Sources */,
 				09D5072E26C23C930088B926 /* 10250.swift in Sources */,
