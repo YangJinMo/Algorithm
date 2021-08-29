@@ -88,7 +88,8 @@ class Problem_1011 {
     /// 원리가 뭘까?
     func solution_2_1() {
         for _ in 1...Int(readLine()!)! {
-            var end: Int = readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0){-$0-$1}*(-1)*4,k=1,i=1
+            let end = readLine()!.split{$0==" "}.map{Int($0)!}.reduce(0){-$0-$1}*(-1)*4
+            var k = 1, i = 1
             
             while k < end {
                 i += 1
