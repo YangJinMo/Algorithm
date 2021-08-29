@@ -38,25 +38,27 @@ class Problem_9498 {
     case 60...69:print("D")
     default:print("F")
     }
+    //switch Int(readLine()!)!{case 90...100:print("A")case 80...89:print("B")case 70...79:print("C")case 60...69:print("D")default:print("F")}
+    //var c="A";switch Int(readLine()!)!{case 80...89:c="B"case 70...79:c="C"case 60...69:c="D"case 0...59:c="F"default:break};print(c)
   }
   func solution_3() {
-    let n=Int(readLine()!)!;
-    var c:Character="A";
-    if(n<60){c="F";}
-    else if(n<70){c="D";}
-    else if(n<80){c="C";}
-    else if(n<90){c="B";};
+    let n=Int(readLine()!)!
+    var c="A"
+    if n<60{c="F"}
+    else if n<70{c="D"}
+    else if n<80{c="C"}
+    else if n<90{c="B"}
     print(c)
-    // let n=Int(readLine()!)!;var c:Character="A";if(n<60){c="F";}else if(n<70){c="D";}else if(n<80){c="C";}else if(n<90){c="B";};print(c)
+    //var n=Int(readLine()!)!,c="A";if n<60{c="F"}else if n<70{c="D"}else if n<80{c="C"}else if n<90{c="B"};print(c)
   }
   func solution_4() {
-    var n=Int(readLine()!)!,c=65;
-    if(n<90){c+=1;}
-    if(n<80){c+=1;}
-    if(n<70){c+=1;}
-    if(n<60){c+=2;};
+    var n=Int(readLine()!)!,c=65
+    if n<90{c+=1}
+    if n<80{c+=1}
+    if n<70{c+=1}
+    if n<60{c+=2}
     print(UnicodeScalar(c)!)
-    // var n=Int(readLine()!)!,c=65;if(n<90){c+=1;};if(n<80){c+=1;};if(n<70){c+=1;};if(n<60){c+=2;};print(UnicodeScalar(c)!)
+    //var n=Int(readLine()!)!,c=65;if n<90{c+=1};if n<80{c+=1};if n<70{c+=1};if n<60{c+=2};print(UnicodeScalar(c)!)
   }
   func solution_5() {
     let l=Int(readLine()!)!;print(UnicodeScalar(l>89 ?65:l>79 ?66:l>69 ?67:l>59 ?68:70)!)
