@@ -15,22 +15,11 @@
 
 class Problem_1000 {
   func solution_1() {
-    /*
-     import Foundation
-     let line: String = readLine()!
-     let lineArr: [String] = line.components(separatedBy: " ")
-     print(Int(lineArr[0])! + Int(lineArr[1])!)
-     */
     let line: String = readLine() ?? ""
     let lineArr: [String.SubSequence] = line.split(separator: " ")
     print(Int(lineArr[0])! + Int(lineArr[1])!)
   }
   func solution_2() {
-    /*
-     import Foundation
-     let line: String = readLine()!
-     let intArr: [Int] = line.components(separatedBy: " ").map{ Int($0)! }
-     */
     let line: String = readLine()!
     let lineArr: [String.SubSequence] = line.split(separator: " ")
     let intArr: [Int] = lineArr.map { Int($0)! }
@@ -78,23 +67,15 @@ class Problem_1000 {
   }
 }
 
+// Foundation: https://developer.apple.com/documentation/foundation
 // readline: https://developer.apple.com/documentation/swift/1641199-readline
 // components: https://developer.apple.com/documentation/foundation/nsstring/1413214-components
+// split: https://developer.apple.com/documentation/swift/string/2894564-split
 // map: https://developer.apple.com/documentation/swift/array/3017522-map
 // reduce: https://developer.apple.com/documentation/swift/array/2298686-reduce
-// split: https://developer.apple.com/documentation/swift/string/2894564-split
 
-// readLine() ?? ""
-// readLine()!
-/// There is no need to consider the case where the optional value contains 'nil', it is shorter, so use Force Unwrapping
-
-// func components(separatedBy separator: String) -> [String]
-// func split(separator: Character, maxSplits: Int = Int.max, omittingEmptySubsequences: Bool = true) -> [Substring]
-// .components(separatedBy: " ") -> [String]
+// .components(separatedBy: " ") -> [String] // need to import Foundation
 // .split(separator: " ") -> [String.SubSequence]
-/// Components need to import Foundation so you don't need to import them using split
-/// The return value and the argument value are also different.
+// .split(separator: " ").map(String.init) -> [String]
 
-// .split(separator: " ")
-// .split{ $0 == " " }
-/// same
+/// .components()의 경우 Foundation에 있는 Objective-C 함수기 때문에 split()의 성능이 뒤에 .map()을 붙이더라도 훨씬 좋다.
