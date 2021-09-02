@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09017987268A9CBD008EA26D /* 11021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09017986268A9CBD008EA26D /* 11021.swift */; };
 		0908559F26D6566100E6EF08 /* 1978.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0908559E26D6566100E6EF08 /* 1978.swift */; };
+		090855A826E0ACD500E6EF08 /* 2581.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090855A726E0ACD500E6EF08 /* 2581.swift */; };
 		090FDB1E26AEA6AB00347205 /* 2675.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FDB1D26AEA6AB00347205 /* 2675.swift */; };
 		0913FACA26BB90950012BFA2 /* 1712.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913FAC926BB90950012BFA2 /* 1712.swift */; };
 		091E048B2692DD8C00291AE3 /* 10952.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E048A2692DD8C00291AE3 /* 10952.swift */; };
@@ -83,6 +84,7 @@
 /* Begin PBXFileReference section */
 		09017986268A9CBD008EA26D /* 11021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11021.swift; sourceTree = "<group>"; };
 		0908559E26D6566100E6EF08 /* 1978.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1978.swift; sourceTree = "<group>"; };
+		090855A726E0ACD500E6EF08 /* 2581.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2581.swift; sourceTree = "<group>"; };
 		090FDB1D26AEA6AB00347205 /* 2675.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2675.swift; sourceTree = "<group>"; };
 		0913FAC926BB90950012BFA2 /* 1712.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1712.swift; sourceTree = "<group>"; };
 		091E048A2692DD8C00291AE3 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0908559E26D6566100E6EF08 /* 1978.swift */,
+				090855A726E0ACD500E6EF08 /* 2581.swift */,
 			);
 			path = "09. Math 2 - Prime and Geometric";
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				095B9E3B26B299620006DF59 /* 2908.swift in Sources */,
 				098E7377267A423200966A04 /* 2588.swift in Sources */,
 				09C5535C26AAA8BA00F94FDC /* 10809.swift in Sources */,
+				090855A826E0ACD500E6EF08 /* 2581.swift in Sources */,
 				096890E726936042007F835C /* 10951.swift in Sources */,
 				0941BEA92683FA8E00942362 /* 2739.swift in Sources */,
 				09867218268999BD0003CCA0 /* 2742.swift in Sources */,

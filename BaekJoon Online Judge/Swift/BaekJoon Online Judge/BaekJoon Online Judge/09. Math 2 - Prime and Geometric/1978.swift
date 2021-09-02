@@ -78,6 +78,6 @@ class Problem_1978 {
     /// https://www.acmicpc.net/short/status/1978/74/1
     /// 1등
     func solution_zzimss() {
-        readLine();print(readLine()!.split{$0==" "}.map{Int($0)!}.filter{i in i>1 && Array(2..<i).filter{i%$0==0}.isEmpty}.count)
+        readLine();print(readLine()!.split{$0==" "}.map{Int($0)!}.filter{i in i>1 && Array(2..<i).filter{i%$0==0}==[]}.count)
     }
 }
