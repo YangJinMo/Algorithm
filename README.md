@@ -14,12 +14,12 @@
 06. Function - 2개
 07. Strings - 10개
 08. Math 1 - Mathematical Thinking - 9개
-09. Math 2 - Prime and Geometric - 2개
- - 총 59개
+09. Math 2 - Prime and Geometric - 3개
+ - 총 60개
 
 #### 숏코딩
 
-- 1등 41개
+- 1등 42개
 - 2등 9개
 - 3등 3개
 - 4등 1개
