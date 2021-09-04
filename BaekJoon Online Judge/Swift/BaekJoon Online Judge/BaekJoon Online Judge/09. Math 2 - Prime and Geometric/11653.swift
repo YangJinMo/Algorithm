@@ -13,13 +13,71 @@
  - 원문: https://www.acmicpc.net/problem/11653
  */
 
+/// 소인수: 어떤 자연수의 약수 중 소수인 수
+
 class Problem_11653 {
     func solution_1() {
+        var N = Int(readLine()!)!
         
+        for i in 2... {
+            while N > 1 {
+                if N % i == 0 {
+                    N /= i
+                    print(i)
+                } else {
+                    break
+                }
+            }
+            if N < 2 {
+                break
+            }
+        }
+    }
+    func solution_2() {
+        var N = Int(readLine()!)!
+        var i = 2
+        
+        while N != 1 {
+            while N % i == 0 {
+                N /= i
+                print(i)
+            }
+            i += 1
+        }
+    }
+    func solution_3() {
+        var N = Int(readLine()!)!
+        var i = 2
+
+        while N != 1 {
+            if N % i == 0 {
+                N /= i
+                print(i)
+            } else {
+                i += 1
+            }
+        }
+    }
+    func solution_4() {
+        var N = Int(readLine()!)!
+        while N != 1 {
+            for i in 2...N {
+                while N % i == 0 {
+                    print(i)
+                    N /= i
+                }
+            }
+        }
     }
     /// https://www.acmicpc.net/short/status/11653/74/1
-    /// 등
-    func solution_zzimss() {
-        
+    /// 1등
+    func solution_short_1() {
+        var N=Int(readLine()!)!,i=2;while N>1{if N%i==0{N/=i;print(i)}else{i+=1}}
+    }
+    func solution_short_2() {
+        var N=Int(readLine()!)!,i=2;while N>1{while N%i==0{N/=i;print(i)};i+=1}
+    }
+    func solution_short_3() {
+        var N=Int(readLine()!)!;while N>1{for i in 2...N{while N%i==0{N/=i;print(i)}}}
     }
 }
