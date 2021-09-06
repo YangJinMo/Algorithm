@@ -6,4 +6,4 @@
 //
 
 let problem = Problem_1929()
-problem.solution_1()
+problem.solution_short_2()

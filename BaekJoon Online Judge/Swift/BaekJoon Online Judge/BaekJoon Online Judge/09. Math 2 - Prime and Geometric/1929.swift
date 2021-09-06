@@ -15,21 +15,88 @@
  */
 
 class Problem_1929 {
+    /// 시간 초과
     func solution_1() {
+        func isPrime(_ num: Int) -> Bool {
+            if num < 2 {
+                return false
+            }
+            for i in 2..<num {
+                if num % i == 0 {
+                    return false
+                }
+            }
+            return true
+        }
         
+        let line = readLine()!.split(separator: " ").map { Int($0)! }
+        let M = line[0]
+        let N = line[1]
+        
+        Array(M...N).filter{ isPrime($0) }.forEach { print($0) }
     }
+    /// 시간 초과
     func solution_2() {
-        
+        let line = readLine()!.split(separator: " ").map { Int($0)! }
+        let M = line[0]
+        let N = line[1]
+        Array(M...N).filter{i in i>1 && Array(2..<i).filter{i%$0==0}==[]}.forEach { print($0) }
     }
     func solution_3() {
+        let line = readLine()!.split(separator: " ").map{ Int($0)! }
+        let M = line[0]
+        let N = line[1]
         
+        var arr: [Int] = Array(repeating: 0, count: N + 1)
+        
+        for i in 2...N {
+            arr[i] = i
+        }
+
+        for j in 2...N {
+            if arr[j] == 0 { continue }
+            for k in stride(from: j + j, through: N, by: j) {
+                arr[k] = 0
+            }
+        }
+
+        for w in M...N {
+            if arr[w] != 0 {
+                print("\(arr[w])")
+            }
+        }
     }
-    func solution_4() {
+    func solution_3_2() {
+        let line = readLine()!.split(separator: " ").map{ Int($0)! }
+        let M = line[0]
+        let N = line[1]
         
+        var arr: [Int] = Array(repeating: 0, count: N + 1)
+        
+        for i in 2...N {
+            arr[i] = i
+        }
+
+        for j in 2...N {
+            if arr[j] > 0 {
+                for k in stride(from: j + j, through: N, by: j) {
+                    arr[k] = 0
+                }
+            }
+        }
+
+        for w in M...N {
+            if arr[w] > 0 {
+                print(arr[w])
+            }
+        }
     }
     /// https://www.acmicpc.net/short/status/1929/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
+        var l=readLine()!.split{$0==" "}.map{Int($0)!},N=l[1],a=Array(repeating:0,count:N+1);(2...N).map{a[$0]=$0};for j in 2...N{if a[j]>0{for k in stride(from:j+j,through:N,by:j){a[k]=0}}};(l[0]...N).filter{a[$0]>0}.map{print($0)}
+    }
+    func solution_short_2() {
+        var l=readLine()!.split{$0==" "}.map{Int($0)!},N=l[1],a=Array(repeating:0,count:N+1);(2...N).map{a[$0]=$0};for j in 2...N{if a[j]>0{for k in stride(from:j+j,through:N,by:j){a[k]=0}}};(l[0]...N).map{if a[$0]>0{print($0)}}
     }
 }
