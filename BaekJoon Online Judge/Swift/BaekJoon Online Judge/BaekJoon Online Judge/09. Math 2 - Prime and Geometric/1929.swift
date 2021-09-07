@@ -42,6 +42,7 @@ class Problem_1929 {
         let N = line[1]
         Array(M...N).filter{i in i>1 && Array(2..<i).filter{i%$0==0}==[]}.forEach { print($0) }
     }
+    /// 에라토스테네스의 체
     func solution_3() {
         let line = readLine()!.split(separator: " ").map{ Int($0)! }
         let M = line[0]
