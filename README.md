@@ -1,5 +1,9 @@
 # Algorithm
 
+### Algorithms
+
+- Trie
+
 ### BaekJoon Online Judge
 
 
