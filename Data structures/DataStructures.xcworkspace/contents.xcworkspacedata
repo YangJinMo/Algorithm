@@ -13,9 +13,6 @@
          <FileRef
             location = "group:Trie_Collection/Trie_Collection.xcodeproj">
          </FileRef>
-         <FileRef
-            location = "group:README.md">
-         </FileRef>
       </Group>
    </Group>
 </Workspace>
