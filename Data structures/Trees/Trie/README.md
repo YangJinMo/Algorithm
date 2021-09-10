@@ -309,7 +309,7 @@ print(trie.contains(word: "cut")) // false
   trie.remove("")
   ```
 
-[Algorithm/Algorithms at master · YangJinMo/Algorithm](https://github.com/YangJinMo/Algorithm/tree/master/Algorithms)
+
 
 ### 참고
 
