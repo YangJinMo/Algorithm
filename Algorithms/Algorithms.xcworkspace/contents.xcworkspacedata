@@ -7,4 +7,7 @@
    <FileRef
       location = "group:Trie_Collection/Trie_Collection.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Union-Find/Union-Find.xcodeproj">
+   </FileRef>
 </Workspace>
