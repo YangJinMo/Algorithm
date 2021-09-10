@@ -6,7 +6,7 @@
 - [Union-Find](https://www.notion.so/zzimss/Union-Find-fa78205d7928462391c0511c02993868)
 ### BaekJoon Online Judge
 
-[단계별로 풀어보기](https://www.acmicpc.net/step)
+- [단계별로 풀어보기](https://www.acmicpc.net/step)
 
 01. Input-Output and Arithmetic - 11개
 02. If Statement - 5개
