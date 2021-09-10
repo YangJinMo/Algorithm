@@ -2,7 +2,7 @@
 //  Trie.swift
 //  Trie_Collection
 //
-//  Created by Jmy on 2021/09/09.
+//  Created by Jmy on 2021/09/11.
 //
 
 /// Trie adopting the Collection protocol

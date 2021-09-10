@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0927F19E26EB9C78004D2B41 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927F19D26EB9C78004D2B41 /* main.swift */; };
+		0927F1BA26EBDE9D004D2B41 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927F1B926EBDE9D004D2B41 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0927F19826EB9C78004D2B41 /* CopyFiles */ = {
+		0927F1B426EBDE9D004D2B41 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0927F19A26EB9C78004D2B41 /* Union-Find */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Union-Find"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0927F19D26EB9C78004D2B41 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0927F1B626EBDE9D004D2B41 /* Union-Find */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Union-Find"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0927F1B926EBDE9D004D2B41 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0927F19726EB9C78004D2B41 /* Frameworks */ = {
+		0927F1B326EBDE9D004D2B41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0927F19126EB9C78004D2B41 = {
+		0927F1AD26EBDE9D004D2B41 = {
 			isa = PBXGroup;
 			children = (
-				0927F19C26EB9C78004D2B41 /* Union-Find */,
-				0927F19B26EB9C78004D2B41 /* Products */,
+				0927F1B826EBDE9D004D2B41 /* Union-Find */,
+				0927F1B726EBDE9D004D2B41 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0927F19B26EB9C78004D2B41 /* Products */ = {
+		0927F1B726EBDE9D004D2B41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0927F19A26EB9C78004D2B41 /* Union-Find */,
+				0927F1B626EBDE9D004D2B41 /* Union-Find */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0927F19C26EB9C78004D2B41 /* Union-Find */ = {
+		0927F1B826EBDE9D004D2B41 /* Union-Find */ = {
 			isa = PBXGroup;
 			children = (
-				0927F19D26EB9C78004D2B41 /* main.swift */,
+				0927F1B926EBDE9D004D2B41 /* main.swift */,
 			);
 			path = "Union-Find";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0927F19926EB9C78004D2B41 /* Union-Find */ = {
+		0927F1B526EBDE9D004D2B41 /* Union-Find */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0927F1A126EB9C78004D2B41 /* Build configuration list for PBXNativeTarget "Union-Find" */;
+			buildConfigurationList = 0927F1BD26EBDE9D004D2B41 /* Build configuration list for PBXNativeTarget "Union-Find" */;
 			buildPhases = (
-				0927F19626EB9C78004D2B41 /* Sources */,
-				0927F19726EB9C78004D2B41 /* Frameworks */,
-				0927F19826EB9C78004D2B41 /* CopyFiles */,
+				0927F1B226EBDE9D004D2B41 /* Sources */,
+				0927F1B326EBDE9D004D2B41 /* Frameworks */,
+				0927F1B426EBDE9D004D2B41 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = "Union-Find";
 			productName = "Union-Find";
-			productReference = 0927F19A26EB9C78004D2B41 /* Union-Find */;
+			productReference = 0927F1B626EBDE9D004D2B41 /* Union-Find */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0927F19226EB9C78004D2B41 /* Project object */ = {
+		0927F1AE26EBDE9D004D2B41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					0927F19926EB9C78004D2B41 = {
+					0927F1B526EBDE9D004D2B41 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 0927F19526EB9C78004D2B41 /* Build configuration list for PBXProject "Union-Find" */;
+			buildConfigurationList = 0927F1B126EBDE9D004D2B41 /* Build configuration list for PBXProject "Union-Find" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 0927F19126EB9C78004D2B41;
-			productRefGroup = 0927F19B26EB9C78004D2B41 /* Products */;
+			mainGroup = 0927F1AD26EBDE9D004D2B41;
+			productRefGroup = 0927F1B726EBDE9D004D2B41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0927F19926EB9C78004D2B41 /* Union-Find */,
+				0927F1B526EBDE9D004D2B41 /* Union-Find */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0927F19626EB9C78004D2B41 /* Sources */ = {
+		0927F1B226EBDE9D004D2B41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0927F19E26EB9C78004D2B41 /* main.swift in Sources */,
+				0927F1BA26EBDE9D004D2B41 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0927F19F26EB9C78004D2B41 /* Debug */ = {
+		0927F1BB26EBDE9D004D2B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		0927F1A026EB9C78004D2B41 /* Release */ = {
+		0927F1BC26EBDE9D004D2B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +241,7 @@
 			};
 			name = Release;
 		};
-		0927F1A226EB9C78004D2B41 /* Debug */ = {
+		0927F1BE26EBDE9D004D2B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -252,7 +252,7 @@
 			};
 			name = Debug;
 		};
-		0927F1A326EB9C78004D2B41 /* Release */ = {
+		0927F1BF26EBDE9D004D2B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +266,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0927F19526EB9C78004D2B41 /* Build configuration list for PBXProject "Union-Find" */ = {
+		0927F1B126EBDE9D004D2B41 /* Build configuration list for PBXProject "Union-Find" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0927F19F26EB9C78004D2B41 /* Debug */,
-				0927F1A026EB9C78004D2B41 /* Release */,
+				0927F1BB26EBDE9D004D2B41 /* Debug */,
+				0927F1BC26EBDE9D004D2B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0927F1A126EB9C78004D2B41 /* Build configuration list for PBXNativeTarget "Union-Find" */ = {
+		0927F1BD26EBDE9D004D2B41 /* Build configuration list for PBXNativeTarget "Union-Find" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0927F1A226EB9C78004D2B41 /* Debug */,
-				0927F1A326EB9C78004D2B41 /* Release */,
+				0927F1BE26EBDE9D004D2B41 /* Debug */,
+				0927F1BF26EBDE9D004D2B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0927F19226EB9C78004D2B41 /* Project object */;
+	rootObject = 0927F1AE26EBDE9D004D2B41 /* Project object */;
 }

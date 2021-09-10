@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Trees"
+      name = "Trees">
+      <Group
+         location = "group:Trie"
+         name = "Trie">
+         <FileRef
+            location = "group:Trie/Trie.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Trie_Collection/Trie_Collection.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>

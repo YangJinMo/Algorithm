@@ -2,7 +2,7 @@
 //  main.swift
 //  Union-Find
 //
-//  Created by Jmy on 2021/09/10.
+//  Created by Jmy on 2021/09/11.
 //
 
 let nodes: [Int] = (0 ... 7).map { $0 }
