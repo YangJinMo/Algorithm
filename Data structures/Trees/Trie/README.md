@@ -3,7 +3,7 @@
 - Retrieval의 약자, Digital Tree / Radix Tree / Prefix Tree 라고도 불림.
 - 말로 할 때 트리(tree)와 구분되지 않는 경향이 있었기 때문에 트라이(/ˈtraɪ/)라고 부르기 시작하게 되었다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2e7067e-6353-4f2a-b585-42159554ae40/Untitled.png)
+![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2e7067e-6353-4f2a-b585-42159554ae40%2FUntitled.png?table=block&id=80bc342f-3f83-44d1-995a-dbf800489ac6&spaceId=0aecca26-03f3-4421-bbad-cf26fcc377d2&width=1230&userId=fd888d04-97f4-4e8f-ac4e-3b136d324861&cache=v2)
 
 - 예측 문자나 자동 완성에 필요한 사전을 저장하는 것이 일반적인 응용.
 - 빠르게 조회, 삽입, 삭제할 수 있는 기능을 활용하는 응용.
@@ -17,7 +17,7 @@
 
 영어에 대한 효율적인 접두사 일치를 용이하게 하는 핵심 데이터 구조이기도 합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8fc94d31-0763-4eee-8d8a-be07f342f8c1/Untitled.png)
+![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8fc94d31-0763-4eee-8d8a-be07f342f8c1%2FUntitled.png?table=block&id=6f2a61e0-c4a1-400a-bd7c-f98e584f11b6&spaceId=0aecca26-03f3-4421-bbad-cf26fcc377d2&width=1300&userId=fd888d04-97f4-4e8f-ac4e-3b136d324861&cache=v2)
 
 Trie에 저장된 "Cat", "Cut", "Cute", "To", "B" 문자열의 예.
 
