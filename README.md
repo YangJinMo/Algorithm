@@ -2,7 +2,7 @@
 
 ### The algorithms
 
-- [Union-Find](https://github.com/YangJinMo/Algorithm/tree/master/The%20algorithms/Searching/Union-Find)
+- [Union-Find](https://github.com/YangJinMo/Algorithm/tree/master/Algorithms/Searching/Union-Find)
 
 ### Data structures
 
