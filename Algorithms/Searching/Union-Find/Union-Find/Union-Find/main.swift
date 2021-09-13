@@ -11,9 +11,9 @@ let edges: [[Int]] = [[1, 2], [2, 3], [1, 5], [5, 2], [5, 6], [4, 7]]
 var parents: [Int] = nodes
 
 for edge in edges {
-    union(edge[0], edge[1])
-//    var (x, y) = (edge[0], edge[1])
-//    union(&x, &y)
+//    union(edge[0], edge[1])
+    var (x, y) = (edge[0], edge[1])
+    union(&x, &y)
 }
 
 func union(_ x: Int, _ y: Int) {
@@ -38,7 +38,8 @@ func union(_ x: inout Int, _ y: inout Int) {
     }
 }
 
-/// 한 쪽으로만 tree 가 치우져진 경우, find 함수가 루트노드를 찾는데 O(N)의 시간복잡도가 걸려 tree로 구현하는 이점이 사라집니다.
+/// 한 쪽으로만 치우쳐진 사향트리(Skewed Tree, 편향트리)의 경우
+/// 루트노드를 찾는데 O(N)의 시간복잡도가 걸립니다.
 func find(x: Int) -> Int {
     if parents[x] == x {
         return x
@@ -47,7 +48,9 @@ func find(x: Int) -> Int {
     }
 }
 
-/// 이를 해결하기 위해 재귀함수를 사용하여 구현합니다.
+/// 재귀함수를 사용하여 부모 노드를 찾아 저장해두면
+/// 다음 검색 시에는 빠르게 찾을 수 있습니다.
+/// - 경로 압축(Path Compression)
 func find(_ x: Int) -> Int {
     if parents[x] == x {
         return x

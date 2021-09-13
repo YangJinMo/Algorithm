@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Searching"
+      name = "Searching">
+      <Group
+         location = "container:"
+         name = "Union-Find">
+         <FileRef
+            location = "group:Searching/Union-Find/Union-Find/Union-Find.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Searching/Union-Find/Union-Find_ByRank/Union-Find_ByRank.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Searching/Union-Find/Weighted_Union-Find/Weighted_Union-Find.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
