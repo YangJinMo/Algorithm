@@ -1,10 +1,10 @@
 # Algorithm
 
-### The algorithms
+### Algorithms
 
 - [Union-Find](https://github.com/YangJinMo/Algorithm/tree/master/Algorithms/Searching/Union-Find)
 
-### Data structures
+### Data Structures
 
 - [Trie](https://github.com/YangJinMo/Algorithm/tree/master/Data%20structures/Trees/Trie)
 
