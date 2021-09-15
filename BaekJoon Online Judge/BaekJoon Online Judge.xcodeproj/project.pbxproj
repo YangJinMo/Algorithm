@@ -16,6 +16,7 @@
 		090FDB1E26AEA6AB00347205 /* 2675.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FDB1D26AEA6AB00347205 /* 2675.swift */; };
 		0913FACA26BB90950012BFA2 /* 1712.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913FAC926BB90950012BFA2 /* 1712.swift */; };
 		091E048B2692DD8C00291AE3 /* 10952.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E048A2692DD8C00291AE3 /* 10952.swift */; };
+		0927F1A826EBB5C6004D2B41 /* 2606.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927F1A726EBB5C6004D2B41 /* 2606.swift */; };
 		092A26362697FAF100153367 /* 2562.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A26352697FAF100153367 /* 2562.swift */; };
 		092F9815269ED29D001D9001 /* 8958.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F9814269ED29D001D9001 /* 8958.swift */; };
 		0941BEA92683FA8E00942362 /* 2739.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BEA82683FA8E00942362 /* 2739.swift */; };
@@ -94,6 +95,7 @@
 		090FDB1D26AEA6AB00347205 /* 2675.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2675.swift; sourceTree = "<group>"; };
 		0913FAC926BB90950012BFA2 /* 1712.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1712.swift; sourceTree = "<group>"; };
 		091E048A2692DD8C00291AE3 /* 10952.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10952.swift; sourceTree = "<group>"; };
+		0927F1A726EBB5C6004D2B41 /* 2606.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2606.swift; sourceTree = "<group>"; };
 		092A26352697FAF100153367 /* 2562.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2562.swift; sourceTree = "<group>"; };
 		092F9814269ED29D001D9001 /* 8958.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8958.swift; sourceTree = "<group>"; };
 		0941BEA82683FA8E00942362 /* 2739.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2739.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 			path = "04. While Statement";
 			sourceTree = "<group>";
 		};
+		0927F1A626EBB595004D2B41 /* 24. DFS & BFS */ = {
+			isa = PBXGroup;
+			children = (
+				0927F1A726EBB5C6004D2B41 /* 2606.swift */,
+			);
+			path = "24. DFS & BFS";
+			sourceTree = "<group>";
+		};
 		0941BEA72683FA7000942362 /* 03. For Statement */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +264,7 @@
 				098068B826A70BA600D8AB1B /* 07. Strings */,
 				0913FACC26BBA5000012BFA2 /* 08. Math 1 - Mathematical Thinking */,
 				090B661926D5114500D00096 /* 09. Math 2 - Prime and Geometric */,
+				0927F1A626EBB595004D2B41 /* 24. DFS & BFS */,
 				09655F44266DCF2D00A9CA76 /* main.swift */,
 			);
 			path = "BaekJoon Online Judge";
@@ -428,6 +439,7 @@
 				09655F5E266DF61B00A9CA76 /* 10171.swift in Sources */,
 				090855B526E64A4C00E6EF08 /* 1929.swift in Sources */,
 				09D278FC2699853800FC0DD9 /* 2577.swift in Sources */,
+				0927F1A826EBB5C6004D2B41 /* 2606.swift in Sources */,
 				09B78E30269BED2B00D8B645 /* 3052.swift in Sources */,
 				0945AD04269DABE200E99E85 /* 1546.swift in Sources */,
 				09E1441226B139C2009D5839 /* 1157.swift in Sources */,
