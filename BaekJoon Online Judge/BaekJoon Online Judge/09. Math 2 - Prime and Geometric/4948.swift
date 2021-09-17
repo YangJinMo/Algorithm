@@ -18,21 +18,30 @@
 
 class Problem_4948 {
     func solution_1() {
-        
-    }
-    func solution_2() {
-        
-    }
-    func solution_3() {
-        
+        while let l = readLine() {
+            let N = Int(l)!
+            if N == 0 { break }
+            
+            var arr: [Int] = Array(repeating: 0, count: 2 * N + 1)
+            
+            for i in 2...2*N {
+                arr[i] = i
+            }
+
+            for j in 2...2*N {
+                if arr[j] > 0 {
+                    for k in stride(from: j + j, through: 2*N, by: j) {
+                        arr[k] = 0
+                    }
+                }
+            }
+            print((N+1...2*N).filter { arr[$0] > 0 }.count)
+        }
     }
     /// https://www.acmicpc.net/short/status/4948/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
-    }
-    func solution_short_2() {
-        
+        while let l=readLine(){var N=Int(l)!,T=2*N,a=Array(repeating:0,count:T+1);if N<1{break};(2...T).map{a[$0]=$0};for j in 2...T{if a[j]>0{for k in stride(from:j+j,through:T,by:j){a[k]=0}}};print((N+1...T).filter{a[$0]>0}.count)}
     }
 }
 
