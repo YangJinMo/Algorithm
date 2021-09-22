@@ -19,12 +19,97 @@
 
 class Problem_9020 {
     func solution_1() {
-        
+        let n = 10000
+        var arr: [Int] = Array(repeating: 0, count: n + 1)
+
+        for i in 2 ... n {
+            arr[i] = i
+        }
+
+        for k in 2 ... n {
+            for j in stride(from: k + k, through: n, by: k) {
+                arr[j] = 0
+            }
+        }
+
+        let T = Int(readLine()!)!
+
+        for _ in 1 ... T {
+            let num = Int(readLine()!)!
+            var p1 = num / 2
+            var p2 = num / 2
+            while true {
+                if (arr[p1] + arr[p2]) == num {
+                    print(p1, p2)
+                    break
+                } else {
+                    p1 -= 1
+                    p2 += 1
+                }
+            }
+        }
     }
+
+    func solution_2() {
+        let maxNum: Int = 10000
+        var numArr: [Bool] = Array(repeating: true, count: maxNum + 1)
+
+        numArr[1] = false
+
+        Array(2 ... maxNum / 2).forEach {
+            var i: Int = 2
+
+            while $0 * i <= maxNum {
+                numArr[$0 * i] = false
+                i += 1
+            }
+        }
+        var T = Int(readLine()!)!
+
+        while T > 0 {
+            let N = Int(readLine()!)!
+            var i = N / 2
+            var j = N / 2
+
+            while true {
+                if numArr[i] && numArr[j] {
+                    print(i, j)
+                    break
+                }
+                i -= 1
+                j += 1
+            }
+            T -= 1
+        }
+    }
+
+    func solution_3() {
+        func prime(_ n: Int) -> Bool {
+            if n < 4 {
+                return true
+            } else {
+                for i in 2 ..< n {
+                    if n % i == 0 {
+                        return false
+                    }
+                }
+                return true
+            }
+        }
+        for _ in 1 ... Int(readLine()!)! {
+            let n = Int(readLine()!)!
+            for i in 0 ... n / 2 - 2 {
+                if prime(n / 2 - i) && prime(n / 2 + i) {
+                    print(n / 2 - i, n / 2 + i)
+                    break
+                }
+            }
+        }
+    }
+
     /// https://www.acmicpc.net/short/status/9020/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
+        func f(_ n:Int)->Bool{if n<4{return true}else{for i in 2..<n{if n%i==0{return false}};return true}};for _ in 1...Int(readLine()!)!{let n=Int(readLine()!)!/2;for i in 0...n-2 {if f(n-i)&&f(n+i){print(n-i,n+i);break}}}
     }
 }
-
