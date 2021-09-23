@@ -25,6 +25,7 @@
 		0945B17B268D966F007CBF70 /* 2438.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B17A268D966F007CBF70 /* 2438.swift */; };
 		0945B181268E256C007CBF70 /* 2439.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B180268E256C007CBF70 /* 2439.swift */; };
 		0945B184269029D1007CBF70 /* 10871.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945B183269029D1007CBF70 /* 10871.swift */; };
+		0947197D26FC49F6008E1908 /* 1085.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0947197C26FC49F6008E1908 /* 1085.swift */; };
 		094C6589269FE9740032E2FF /* 4344.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C6588269FE9740032E2FF /* 4344.swift */; };
 		094C659126A2F2800032E2FF /* 4673.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C659026A2F2800032E2FF /* 4673.swift */; };
 		095B9E3826B297760006DF59 /* 1152.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B9E3726B297760006DF59 /* 1152.swift */; };
@@ -105,6 +106,7 @@
 		0945B17A268D966F007CBF70 /* 2438.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2438.swift; sourceTree = "<group>"; };
 		0945B180268E256C007CBF70 /* 2439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2439.swift; sourceTree = "<group>"; };
 		0945B183269029D1007CBF70 /* 10871.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10871.swift; sourceTree = "<group>"; };
+		0947197C26FC49F6008E1908 /* 1085.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1085.swift; sourceTree = "<group>"; };
 		094C6588269FE9740032E2FF /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
 		094C659026A2F2800032E2FF /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
 		095B9E3726B297760006DF59 /* 1152.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1152.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				090855B426E64A4C00E6EF08 /* 1929.swift */,
 				090855B726E6EDDE00E6EF08 /* 4948.swift */,
 				090C370026F567D200E48F3F /* 9020.swift */,
+				0947197C26FC49F6008E1908 /* 1085.swift */,
 			);
 			path = "09. Math 2 - Prime and Geometric";
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				09655F61266DF62700A9CA76 /* 10172.swift in Sources */,
 				095B9E3B26B299620006DF59 /* 2908.swift in Sources */,
 				090855AF26E207BD00E6EF08 /* 11653.swift in Sources */,
+				0947197D26FC49F6008E1908 /* 1085.swift in Sources */,
 				098E7377267A423200966A04 /* 2588.swift in Sources */,
 				09C5535C26AAA8BA00F94FDC /* 10809.swift in Sources */,
 				090855A826E0ACD500E6EF08 /* 2581.swift in Sources */,
