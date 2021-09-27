@@ -20,15 +20,15 @@
 06. Function - 2개
 07. Strings - 10개
 08. Math 1 - Mathematical Thinking - 9개
-09. Math 2 - Prime and Geometric - 7개
+09. Math 2 - Prime and Geometric - 6개
 24. DFS & BFS - 1개
 
- - 총 65개
+ - 총 64개
 
 #### 숏코딩
 
 - 1등 46개
-- 2등 10개
+- 2등 9개
 - 3등 3개
 - 4등 1개
 - 5등 1개
