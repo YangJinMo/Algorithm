@@ -15,12 +15,51 @@
 
 class Problem_3009 {
     func solution_1() {
+        let arr: [[Int]] = (1 ... 3).map { _ in
+            readLine()!.split(separator: " ").compactMap { Int($0) }
+        }
         
+        var x = 0
+        var y = 0
+        
+        if arr[0][0] == arr[1][0] {
+            x = arr[2][0]
+        } else if arr[0][0] == arr[2][0] {
+            x = arr[1][0]
+        } else {
+            x = arr[0][0]
+        }
+        
+        if arr[0][1] == arr[1][1] {
+            y = arr[2][1]
+        } else if arr[0][1] == arr[2][1] {
+            y = arr[1][1]
+        } else {
+            y = arr[0][1]
+        }
+        
+        print(x, y)
     }
 
-    /// https://www.acmicpc.net/short/status/3009/74/1
-    /// 등
-    func solution_short_1() {
+    
+    func solution_2() {
+        var x = 0
+        var y = 0
         
+        for _ in 1...3 {
+            let a = readLine()!.split(separator: " ")
+            
+            x ^= Int(a[0])!
+            y ^= Int(a[1])!
+        }
+        
+        print(x,y)
+    }
+    /// https://www.acmicpc.net/short/status/3009/74/1
+    /// 1등
+    func solution_short_1() {
+        var x=0,y=0
+        for _ in 1...3{let a=readLine()!.split{$0==" "};x^=Int(a[0])!;y^=Int(a[1])!}
+        print(x,y)
     }
 }
