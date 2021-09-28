@@ -18,10 +18,10 @@ class Problem_3009 {
         let arr: [[Int]] = (1 ... 3).map { _ in
             readLine()!.split(separator: " ").compactMap { Int($0) }
         }
-        
+
         var x = 0
         var y = 0
-        
+
         if arr[0][0] == arr[1][0] {
             x = arr[2][0]
         } else if arr[0][0] == arr[2][0] {
@@ -29,7 +29,7 @@ class Problem_3009 {
         } else {
             x = arr[0][0]
         }
-        
+
         if arr[0][1] == arr[1][1] {
             y = arr[2][1]
         } else if arr[0][1] == arr[2][1] {
@@ -37,24 +37,41 @@ class Problem_3009 {
         } else {
             y = arr[0][1]
         }
-        
+
         print(x, y)
     }
 
-    
     func solution_2() {
+        var s = Array(repeating: Set<Int>(), count: 2)
+        
+        for _ in 1 ... 3 {
+            let a = readLine()!.split(separator: " ").map { Int($0)! }
+            for i in 0 ... 1 {
+                if s[i].contains(a[i]) {
+                    s[i].remove(a[i])
+                } else {
+                    s[i].insert(a[i])
+                }
+            }
+        }
+        
+        print(s[0].first!, s[1].first!)
+    }
+    
+    func solution_3() {
         var x = 0
         var y = 0
-        
-        for _ in 1...3 {
+
+        for _ in 1 ... 3 {
             let a = readLine()!.split(separator: " ")
-            
+
             x ^= Int(a[0])!
             y ^= Int(a[1])!
         }
         
-        print(x,y)
+        print(x, y)
     }
+
     /// https://www.acmicpc.net/short/status/3009/74/1
     /// 1등
     func solution_short_1() {
