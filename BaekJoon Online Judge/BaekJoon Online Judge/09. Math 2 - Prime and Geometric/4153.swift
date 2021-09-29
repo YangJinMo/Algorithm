@@ -16,12 +16,54 @@
 
 class Problem_4153 {
     func solution_1() {
-        
+        while let line = readLine() {
+            var arrInt = line.split(separator: " ").map { Int($0)! * Int($0)! }
+            
+            //if arrInt.reduce(1,*) == 0 { // 런타임 에러
+            if arrInt.contains(0) {
+            //if arrInt.allSatisfy({ $0 == 0 }) {
+                break
+            } else {
+                arrInt.sort()
+                print(arrInt[0] + arrInt[1] == arrInt[2] ? "right" : "wrong")
+            }
+        }
+    }
+    
+    func solution_2() {
+        while let line = readLine() {
+            var arrInt = line.split(separator: " ").compactMap { Int($0) }
+            arrInt.sort()
+            
+            let (a, b, c) = (arrInt[0], arrInt[1], arrInt[2])
+            
+            //if arrInt.reduce(1,*) == 0 { // 시간 더 걸림
+            if a * b * c == 0 {
+                break
+            } else if a * a + b * b == c * c {
+                print("right")
+            } else {
+                print("wrong")
+            }
+        }
     }
 
     /// https://www.acmicpc.net/short/status/4153/74/1
-    /// 등
+    /// 1등
+    /// 142
     func solution_short_1() {
-        
+        while let l=readLine(){var a=l.split{$0==" "}.map{Int($0)!*Int($0)!};if a.contains(0){break};a.sort();print(a[0]+a[1]==a[2] ?"right":"wrong")}
+    }
+    /// 136
+    func solution_short_2() {
+        while let l=readLine(){var a=l.split{$0==" "}.map{Int($0)!*Int($0)!};a.sort();if a[0]==0{break};print(a[0]+a[1]==a[2] ?"right":"wrong")}
+    }
+    /// 136
+    func solution_short_3() {
+        while let l=readLine(){let a=l.split{$0==" "}.map{Int($0)!*Int($0)!}.sorted();if a[0]==0{break};print(a[0]+a[1]==a[2] ?"right":"wrong")}
+    }
+    /// 142
+    func solution_short_4() {
+        while let l=readLine(){let a=l.split{$0==" "}.map{Int($0)!}.sorted(),x=a[0],y=a[1],z=a[2];if x==0{break};print(x*x+y*y==z*z ?"right":"wrong")}
     }
 }
