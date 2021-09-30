@@ -20,15 +20,20 @@
  - 원문: https://www.acmicpc.net/problem/3053
  */
 
+/// 택시 기하학 (맨해튼 거리, Manhattan distance)
+/// https://st-lab.tistory.com/89
 class Problem_3053 {
     func solution_1() {
+        let R = Double(readLine()!)!
         
+        print(Double.pi * R * R)
+        print(2 * R * R)
     }
 
     /// https://www.acmicpc.net/short/status/3053/74/1
-    /// 등
-    ///
+    /// 2등 - 같은 코드
     func solution_short_1() {
-        
+        let R=Double(readLine()!)!
+        print("\(R*R*Double.pi)\n\(R*R*2)")
     }
 }
