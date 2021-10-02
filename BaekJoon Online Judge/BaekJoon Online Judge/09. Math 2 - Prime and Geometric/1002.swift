@@ -18,14 +18,71 @@
  - 원문: https://www.acmicpc.net/problem/1002
  */
 
+// 두 원의 위치관계
+// https://mathbang.net/101#recentComments
+
+import Foundation
+
 class Problem_1002 {
     func solution_1() {
-        
+        let T: Int = Int(readLine()!)!
+            
+        for _ in 0 ..< T {
+            let intArr: [Double] = readLine()!.split(separator: " ").compactMap { Double($0) }
+            
+            let distPow: Double = pow(intArr[0] - intArr[3], 2) + pow(intArr[1] - intArr[4], 2)
+            let rAddPow: Double = pow(intArr[2] + intArr[5], 2)
+            let rSubPow: Double = pow(intArr[2] - intArr[5], 2)
+            
+            if intArr[0] == intArr[3] && intArr[1] == intArr[4] && intArr[2] == intArr[5] {
+                print(-1)
+            } else if distPow > rAddPow || distPow < rSubPow {
+                print(0)
+            } else if distPow == rAddPow || distPow == rSubPow {
+                print(1)
+            } else {
+                print(2)
+            }
+        }
+    }
+    
+    func solution_2() {
+        let T: Int = Int(readLine()!)!
+            
+        for _ in 0 ..< T {
+            let a: [Int] = readLine()!.split(separator: " ").compactMap { Int($0) }
+            let (x1, y1, r1, x2, y2, r2) = (a[0], a[1], a[2], a[3], a[4], a[5])
+            
+            let dX: Int = x1 - x2
+            let dY: Int = y1 - y2
+            let addR: Int = r1 + r2
+            let subR: Int = r1 - r2
+            
+            let dP: Int = (dX * dX) + (dY * dY)
+            let addP: Int = addR * addR
+            let subP: Int = subR * subR
+            
+            // if sqrt(dP) == 0 && r1 == r2 {
+            if x1 == x2 && y1 == y2 && r1 == r2 { // 동심원
+                print(-1)
+            } else if dP > addP || dP < subP { // 외부, 내부
+                print(0)
+            } else if dP == addP || dP == subP { // 외접, 내접
+                print(1)
+            } else { // subP < dP < addP
+                print(2)
+            }
+        }
     }
 
     /// https://www.acmicpc.net/short/status/1002/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
+        for _ in 0..<Int(readLine()!)!{let a=readLine()!.split{$0==" "}.map{Int($0)!},(x1,y1,r1,x2,y2, r2)=(a[0],a[1],a[2],a[3],a[4],a[5]),dX=x1-x2,dY=y1-y2,addR=r1+r2,subR=r1-r2,dP=dX*dX+dY*dY,addP=addR*addR,subP=subR*subR;if x1==x2&&y1==y2&&r1==r2{print(-1)}else if dP>addP||dP<subP{print(0)}else if dP==addP||dP==subP{print(1)}else{print(2)}}
+    }
+    
+    func solution_short_2() {
+        readLine()
+        while let l=readLine(){var a=l.split{$0==" "}.map{Int($0)!},(x,y,r,e,f,g)=(a[0],a[1],a[2],a[3],a[4],a[5]),q=x-e,w=y-f,m=r+g,n=r-g,d=q*q+w*w,i=m*m,j=n*n,v=2;if x==e&&y==f&&r==g{v = -1}else if d>i||d<j{v=0}else if d==i||d==j{v=1};print(v)}
     }
 }
