@@ -15,12 +15,39 @@
 
 class Problem_10872 {
     func solution_1() {
+        var N = Int(readLine()!)!
         
+        if N == 0 {
+            N = 1
+        }
+        
+        var result = 1
+        
+        for i in 1 ... N {
+            result *= i
+        }
+        
+        print(result)
     }
-
-    /// https://www.acmicpc.net/short/status/10872/74/1
-    /// 등
-    func solution_short_1() {
+    
+    func solution_2() {
+        var N = Int(readLine()!)!
         
+        if N == 0 {
+            N = 1
+        }
+        
+        print((1 ... N).reduce(1, *))
+    }
+    
+    func solution_3() {
+        let N = Int(readLine()!)!
+        print(N == 0 ? 1 : (1...N).reduce(1, *))
+    }
+    
+    /// https://www.acmicpc.net/short/status/10872/74/1
+    /// 2등 - 같은 코드
+    func solution_short_1() {
+        print((1...max(1,Int(readLine()!)!)).reduce(1,*))
     }
 }
