@@ -20,7 +20,8 @@
  - 원문: https://www.acmicpc.net/problem/3053
  */
 
-/// 택시 기하학 (맨해튼 거리, Manhattan distance)
+/// 택시 기하학 (Taxi Geometric)
+/// 맨해튼 거리 (Manhattan distance)
 /// https://st-lab.tistory.com/89
 class Problem_3053 {
     func solution_1() {
