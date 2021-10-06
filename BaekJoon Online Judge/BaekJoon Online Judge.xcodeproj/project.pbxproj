@@ -74,6 +74,7 @@
 		09D65CFA2709C122009CCE7A /* 10872.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D65CF92709C122009CCE7A /* 10872.swift */; };
 		09DE27F826B7B9FD006CD442 /* 2941.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE27F726B7B9FD006CD442 /* 2941.swift */; };
 		09E1441226B139C2009D5839 /* 1157.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1441126B139C2009D5839 /* 1157.swift */; };
+		09E73B39270DD3A400461C9A /* 10870.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E73B38270DD3A400461C9A /* 10870.swift */; };
 		09EFB34626A8E0D500F020D3 /* 11720.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFB34526A8E0D500F020D3 /* 11720.swift */; };
 		09F8BA84267108EC00280B6C /* 1001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA83267108EC00280B6C /* 1001.swift */; };
 		09F8BA872672598500280B6C /* 10998.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA862672598500280B6C /* 10998.swift */; };
@@ -161,6 +162,7 @@
 		09D65CF92709C122009CCE7A /* 10872.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10872.swift; sourceTree = "<group>"; };
 		09DE27F726B7B9FD006CD442 /* 2941.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2941.swift; sourceTree = "<group>"; };
 		09E1441126B139C2009D5839 /* 1157.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1157.swift; sourceTree = "<group>"; };
+		09E73B38270DD3A400461C9A /* 10870.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10870.swift; sourceTree = "<group>"; };
 		09EFB34526A8E0D500F020D3 /* 11720.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11720.swift; sourceTree = "<group>"; };
 		09F8BA83267108EC00280B6C /* 1001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
 		09F8BA862672598500280B6C /* 10998.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10998.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				09D65CF92709C122009CCE7A /* 10872.swift */,
+				09E73B38270DD3A400461C9A /* 10870.swift */,
 			);
 			path = "10. Recursion";
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				094C6589269FE9740032E2FF /* 4344.swift in Sources */,
 				09C839552682FB980044ED78 /* 2884.swift in Sources */,
 				09A587D026BD006400C60F03 /* 2292.swift in Sources */,
+				09E73B39270DD3A400461C9A /* 10870.swift in Sources */,
 				0908559F26D6566100E6EF08 /* 1978.swift in Sources */,
 				09DE27F826B7B9FD006CD442 /* 2941.swift in Sources */,
 				09EFB34626A8E0D500F020D3 /* 11720.swift in Sources */,
