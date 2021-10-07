@@ -20,12 +20,65 @@
 
 class Problem_10870 {
     func solution_1() {
+        let n = Int(readLine()!)!
         
+        let fibonacciNumbers = [
+            0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765
+        ]
+        
+        print(fibonacciNumbers[n])
+    }
+    
+    func solution_2() {
+        let n = Int(readLine()!)!
+        
+        var fibonacciNumbers = [0, 1]
+        
+        if n > 1 {
+            for i in 2...n {
+                fibonacciNumbers.append(fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2])
+            }
+        }
+        
+        print(fibonacciNumbers[n])
+    }
+    
+    func solution_3() {
+        let n = Int(readLine()!)!
+        let dp = (3...20).reduce(into: [0, 1, 1], { $0.append($0[$1 - 2] + $0[$1 - 1]) })
+        print(dp[n])
+    }
+    
+    func solution_4() {
+        func fivo(_ n: Int) -> Int {
+            if n <= 1 {
+                return n
+            }
+            return fivo(n-1) + fivo(n-2)
+        }
+        
+        print(fivo(Int(readLine()!)!))
     }
     
     /// https://www.acmicpc.net/short/status/10870/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
+        print([0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765][Int(readLine()!)!])
+    }
+    
+    func solution_short_2() {
+        var n=Int(readLine()!)!,f=[0,1]
+        if n>1{for i in 2...n{f.append(f[i-1]+f[i-2])}}
+        print(f[n])
+    }
+    
+    func solution_short_3() {
+        let f=(3...20).reduce(into:[0,1,1],{$0.append($0[$1-2]+$0[$1-1])})
+        print(f[Int(readLine()!)!])
+    }
+    
+    func solution_short_4() {
+        func f(_ n:Int)->Int{n<2 ?n:f(n-1)+f(n-2)}
+        print(f(Int(readLine()!)!))
     }
 }
