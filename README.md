@@ -21,15 +21,15 @@
 07. Strings (문자열) - 10개
 08. Math 1 - Mathematical Thinking (수학적 사고) - 9개
 09. Math 2 - Prime and Geometric (소수와 기하학) - 11개
-10. Recursion (재귀) - 1개
+10. Recursion (재귀) - 2개
 
 24. DFS & BFS (Depth-First Search & Breadth-First Search) - 1개
 
- - 총 70개
+ - 총 71개
 
 #### 숏코딩
 
-- 1등 49개
+- 1등 50개
 - 2등 12개
 - 3등 3개
 - 4등 1개
