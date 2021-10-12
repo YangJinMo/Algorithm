@@ -127,7 +127,7 @@ class Problem_11729 {
     /// https://www.acmicpc.net/short/status/11729/74/1
     /// 1등
     func solution_short_1() {
-        func h(_ n:Int,_ f:Int,_ t:Int){if n==1{print("\(f) \(t)")}else{let p=6-f-t;h(n-1,f,p);h(1,f,t);h(n-1,p,t)}}
+        func h(_ n:Int,_ f:Int,_ t:Int){if n==1{print("\(f) \(t)")}else{h(n-1,f,6-f-t);h(1,f,t);h(n-1,6-f-t,t)}}
         let n=Int(readLine()!)!
         print(1<<n-1)
         h(n,1,3)
