@@ -20,14 +20,116 @@
  - 원문: https://www.acmicpc.net/problem/11729
  */
 
+/// 하노이의 탑 (Tower of Hanoi)
+/// https://en.wikipedia.org/wiki/Tower_of_Hanoi
+/// https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91#Swift - code
+/// https://st-lab.tistory.com/96 - explain
+/// LIFO: Stack
+
+import Foundation /// pow
+
 class Problem_11729 {
     func solution_1() {
+        func move(from: Int, to: Int) {
+            // print(from, to) - 시간 초과
+            print("\(from) \(to)")
+        }
         
+        func hanoi(_ n: Int, rod1 a: Int, rod2 b: Int, rod3 c: Int) {
+            if n == 1 {
+                move(from: a, to: c)
+            } else {
+                hanoi(n-1, rod1: a, rod2: c, rod3: b)
+                move(from: a, to: c)
+                hanoi(n-1, rod1: b, rod2: a, rod3: c)
+            }
+        }
+        let N: Int = Int(readLine()!)!
+        print(pow(2, N) - 1)
+        hanoi(N, rod1: 1, rod2: 2, rod3: 3)
+    }
+    
+    func solution_2() {
+        func move(from: Int, to: Int) {
+            print("\(from) \(to)")
+        }
+        
+        func hanoi(_ n: Int, rod1 a: Int, rod2 b: Int, rod3 c: Int) {
+            if n == 1 {
+                move(from: a, to: c)
+            } else {
+                hanoi(n-1, rod1: a, rod2: c, rod3: b)
+                move(from: a, to: c)
+                hanoi(n-1, rod1: b, rod2: a, rod3: c)
+            }
+        }
+        
+        let N: Int = Int(readLine()!)!
+        var result = 1
+        
+        for _ in 0..<N {
+            result *= 2
+        }
+        
+        print(result - 1)
+
+        hanoi(N, rod1: 1, rod2: 2, rod3: 3)
+    }
+    
+    func solution_3() {
+        var arr: [String] = []
+        func hanoi(_ n:Int, _ s:Int, _ l:Int, _ e:Int) {
+            if n == 1 {
+                arr.append("\(s) \(e)")
+                return
+            }
+            hanoi(n-1, s, e, l)
+            arr.append("\(s) \(e)")
+            hanoi(n-1, l, s, e)
+        }
+        hanoi(Int(readLine()!)!, 1, 2, 3)
+        print(arr.count)
+        arr.forEach{print($0)}
+    }
+    
+    func solution_4() {
+        func hanoi(n: Int, from: Int, to: Int) {
+            if n == 1 {
+                print("\(from) \(to)")
+                return
+            }
+            let temp: Int = 6 - from - to
+            hanoi(n: n - 1, from: from, to: temp)
+            print("\(from) \(to)")
+            hanoi(n: n - 1, from: temp, to: to)
+        }
+        let n: Int = Int(readLine()!)!
+        print(1<<n - 1)
+        hanoi(n: n, from: 1, to: 3)
+    }
+    
+    func solution_5() {
+        let n = Int(readLine()!)!
+        print(pow(2, n) - 1)
+        hanoi(n, 1, 2, 3)
+
+        func hanoi(_ n: Int, _ start: Int, _ mid: Int, _ end: Int) {
+            if n == 1 {
+                print("\(start) \(end)")
+                return
+            }
+            hanoi(n - 1, start, end, mid)
+            hanoi(1, start, mid, end)
+            hanoi(n - 1, mid, start, end)
+        }
     }
     
     /// https://www.acmicpc.net/short/status/11729/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
+        func h(_ n:Int,_ f:Int,_ t:Int){if n==1{print("\(f) \(t)")}else{let p=6-f-t;h(n-1,f,p);h(1,f,t);h(n-1,p,t)}}
+        let n=Int(readLine()!)!
+        print(1<<n-1)
+        h(n,1,3)
     }
 }
