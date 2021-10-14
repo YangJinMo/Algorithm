@@ -20,12 +20,73 @@
 
 class Problem_2798 {
     func solution_1() {
+        func blackJack(_ N: Int, _ M: Int, _ cards: [Int]) -> Int {
+            var max = 0
+            
+            for i in 0 ..< N {
+                for j in i+1 ..< N {
+                    for k in j+1 ..< N {
+                        let sum = cards[i] + cards[j] + cards[k]
+                        
+                        if M == sum {
+                            max = sum
+                            return max
+                        } else if M < sum {
+                            continue
+                        } else if M > sum {
+                            if max < sum {
+                                max = sum
+                            }
+                        }
+                    }
+                }
+            }
+            
+            return max
+        }
         
+        let l = readLine()!.split(separator: " ").compactMap { Int($0) }
+        let cards = readLine()!.split(separator: " ").compactMap { Int($0) }
+        let N = l[0]
+        let M = l[1]
+        
+        //cards.sort()
+        //cards = cards.reversed()
+        
+        print(blackJack(N, M, cards))
+    }
+    
+    func solution_2() {
+        let l=readLine()!.split{$0==" "}.map{Int($0)!}
+        let cards=readLine()!.split{$0==" "}.map{Int($0)!}
+        var a=[Int]()
+        
+        for i in 0..<l[0] {
+            for j in i+1..<l[0] {
+                for k in j+1..<l[0] {
+                    let sum = cards[i] + cards[j] + cards[k]
+                    
+                    if sum <= l[1] {
+                        a.append(sum)
+                    }
+                }
+            }
+        }
+        print(a.max()!)
     }
     
     /// https://www.acmicpc.net/short/status/2798/74/1
-    /// 등
+    /// 1등
+    /// 219
     func solution_short_1() {
-        
+        var l=readLine()!.split{$0==" "}.map{Int($0)!},N=l[0],c=readLine()!.split{$0==" "}.map{Int($0)!},a=[Int]()
+        for i in 0..<N{for j in i+1..<N{for k in j+1..<N{let s=c[i]+c[j]+c[k];if s<=l[1]{a.append(s)}}}}
+        print(a.max()!)
+    }
+    /// 217
+    func solution_short_2() {
+        var l=readLine()!.split{$0==" "},N=Int(l[0])!,c=readLine()!.split{$0==" "}.map{Int($0)!},a=[Int]()
+        for i in 0..<N{for j in i+1..<N{for k in j+1..<N{let s=c[i]+c[j]+c[k];if s<=Int(l[1])!{a.append(s)}}}}
+        print(a.max()!)
     }
 }
