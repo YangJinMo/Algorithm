@@ -79,6 +79,7 @@
 		09E1441226B139C2009D5839 /* 1157.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1441126B139C2009D5839 /* 1157.swift */; };
 		09E73B39270DD3A400461C9A /* 10870.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E73B38270DD3A400461C9A /* 10870.swift */; };
 		09EFB34626A8E0D500F020D3 /* 11720.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFB34526A8E0D500F020D3 /* 11720.swift */; };
+		09F8266D271963AD00F16AD0 /* 2231.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8266C271963AD00F16AD0 /* 2231.swift */; };
 		09F8BA84267108EC00280B6C /* 1001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA83267108EC00280B6C /* 1001.swift */; };
 		09F8BA872672598500280B6C /* 10998.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8BA862672598500280B6C /* 10998.swift */; };
 		09FA0A0426B532DD0091BA81 /* 5622.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA0A0326B532DD0091BA81 /* 5622.swift */; };
@@ -170,6 +171,7 @@
 		09E1441126B139C2009D5839 /* 1157.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1157.swift; sourceTree = "<group>"; };
 		09E73B38270DD3A400461C9A /* 10870.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10870.swift; sourceTree = "<group>"; };
 		09EFB34526A8E0D500F020D3 /* 11720.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11720.swift; sourceTree = "<group>"; };
+		09F8266C271963AD00F16AD0 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
 		09F8BA83267108EC00280B6C /* 1001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
 		09F8BA862672598500280B6C /* 10998.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10998.swift; sourceTree = "<group>"; };
 		09FA0A0326B532DD0091BA81 /* 5622.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5622.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				09CD30B12718723500B2A4DE /* 2798.swift */,
+				09F8266C271963AD00F16AD0 /* 2231.swift */,
 			);
 			path = "11. Brute-force";
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				09CF2C7926857FDB007A4997 /* 10950.swift in Sources */,
 				0966E5312710191A008A6388 /* 2447.swift in Sources */,
 				090C370126F567D200E48F3F /* 9020.swift in Sources */,
+				09F8266D271963AD00F16AD0 /* 2231.swift in Sources */,
 				09D5073426C4D2420088B926 /* 2839.swift in Sources */,
 				099C792E26A5553600F1AAF3 /* 1065.swift in Sources */,
 				09C5524E2681580200A4E88D /* 14681.swift in Sources */,
