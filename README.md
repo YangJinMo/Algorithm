@@ -22,14 +22,14 @@
 08. Math 1 - Mathematical Thinking (수학적 사고) - 9개
 09. Math 2 - Prime and Geometric (소수와 기하학) - 11개
 10. Recursion (재귀) - 4개
-11. Brute-force (무차별 대입) - 1개
+11. Brute-force (무차별 대입) - 2개
 12. DFS & BFS (Depth-First Search & Breadth-First Search) - 1개
 
- - 총 74개
+ - 총 75개
 
 #### 숏코딩
 
-- 1등 53개
+- 1등 54개
 - 2등 12개
 - 3등 3개
 - 4등 1개
