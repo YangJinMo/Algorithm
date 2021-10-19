@@ -16,7 +16,23 @@
 
 class Problem_7568 {
     func solution_1() {
+        let n = Int(readLine()!)!
         
+        var weightList = [[Int]]()
+        
+        for _ in 0..<n {
+            weightList.append(readLine()!.split(separator: " ").map{ Int($0)! })
+        }
+        
+        for i in 0..<n {
+            var rank = 1
+            for j in 0..<n {
+                if weightList[i][0] < weightList[j][0] && weightList[i][1] < weightList[j][1] {
+                    rank += 1
+                }
+            }
+            print(rank, terminator: " ")
+        }
     }
     
     /// https://www.acmicpc.net/short/status/7568/74/1
