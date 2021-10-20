@@ -16,28 +16,70 @@
 
 class Problem_7568 {
     func solution_1() {
-        let n = Int(readLine()!)!
-        
-        var weightList = [[Int]]()
-        
-        for _ in 0..<n {
-            weightList.append(readLine()!.split(separator: " ").map{ Int($0)! })
+        let N = Int(readLine()!)!
+        var arr = [[Int]]()
+
+        for _ in 0 ..< N {
+            arr.append(readLine()!.split(separator: " ").map { Int($0)! })
         }
-        
-        for i in 0..<n {
+
+        for i in 0 ..< N {
             var rank = 1
-            for j in 0..<n {
-                if weightList[i][0] < weightList[j][0] && weightList[i][1] < weightList[j][1] {
+
+            for j in 0 ..< N {
+                if arr[i][0] < arr[j][0] && arr[i][1] < arr[j][1] {
                     rank += 1
                 }
             }
+
             print(rank, terminator: " ")
         }
     }
     
+    func solution_1_2() {
+        var arr = [[Int]]()
+
+        (0 ..< Int(readLine()!)!).forEach { _ in
+            let a = readLine()!.split(separator: " ").map { Int($0)! }
+            arr.append(a)
+        }
+
+        for i in 0 ..< arr.count {
+            var rank = 1
+
+            for j in 0 ..< arr.count {
+                if i == j { continue }
+                if arr[i][0] < arr[j][0] && arr[i][1] < arr[j][1] {
+                    rank += 1
+                }
+            }
+            
+            print(rank, terminator: " ")
+        }
+    }
+
+    func solution_2() {
+        var arr = [(Int, Int)]()
+        var ret = ""
+
+        for _ in 0 ..< Int(readLine()!)! {
+            let input = readLine()!.split(separator: " ").map { Int($0)! }
+            arr.append((input[0], input[1]))
+        }
+
+        for i in arr {
+            ret += "\(arr.filter({ $0.0 > i.0 && $0.1 > i.1 }).count + 1) "
+        }
+
+        print(ret)
+    }
+
     /// https://www.acmicpc.net/short/status/7568/74/1
-    /// 등
+    /// 1등
     func solution_short_1() {
-        
+        var a=[(Int,Int)](),r=""
+        for _ in 0..<Int(readLine()!)! {let l=readLine()!.split{$0==" "}.map{Int($0)!};a.append((l[0],l[1]))}
+        for i in a{r+="\(a.filter({$0.0>i.0 && $0.1>i.1}).count+1) "}
+        print(r)
     }
 }
