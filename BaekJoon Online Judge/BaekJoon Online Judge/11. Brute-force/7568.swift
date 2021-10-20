@@ -78,8 +78,14 @@ class Problem_7568 {
     /// 1등
     func solution_short_1() {
         var a=[(Int,Int)](),r=""
-        for _ in 0..<Int(readLine()!)! {let l=readLine()!.split{$0==" "}.map{Int($0)!};a.append((l[0],l[1]))}
+        for _ in 0..<Int(readLine()!)!{let l=readLine()!.split{$0==" "};a.append((Int(l[0])!,Int(l[1])!))}
         for i in a{r+="\(a.filter({$0.0>i.0 && $0.1>i.1}).count+1) "}
         print(r)
+    }
+    
+    func solution_short_2() {
+        var a=[[Int]]()
+        for _ in 0..<Int(readLine()!)!{let l=readLine()!.split{$0==" "}.map{Int($0)!};a.append(l)}
+        for i in 0..<a.count{var rank=1;for j in 0..<a.count{if a[i][0]<a[j][0]&&a[i][1]<a[j][1]{rank+=1}};print(rank,terminator:" ")}
     }
 }
